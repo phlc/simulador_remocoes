@@ -1,0 +1,2204 @@
+[
+  {
+    "id": 0,
+    "estado": "",
+    "cidade": "",
+    "vara": "Sem Lotação"
+  },
+  {
+    "id": 1,
+    "estado": "Acre",
+    "cidade": "Rio Branco",
+    "vara": "1ª Geral"
+  },
+  {
+    "id": 2,
+    "estado": "Acre",
+    "cidade": "Rio Branco",
+    "vara": "2ª Geral"
+  },
+  {
+    "id": 3,
+    "estado": "Acre",
+    "cidade": "Rio Branco",
+    "vara": "3ª Geral"
+  },
+  {
+    "id": 4,
+    "estado": "Acre",
+    "cidade": "Rio Branco",
+    "vara": "4ª Juizado Especial Cível e Criminal"
+  },
+  {
+    "id": 5,
+    "estado": "Acre",
+    "cidade": "Rio Branco",
+    "vara": "1ª Relatoria TR"
+  },
+  {
+    "id": 6,
+    "estado": "Acre",
+    "cidade": "Rio Branco",
+    "vara": "2ª Relatoria TR"
+  },
+  {
+    "id": 7,
+    "estado": "Acre",
+    "cidade": "Rio Branco",
+    "vara": "3ª Relatoria TR"
+  },
+  {
+    "id": 8,
+    "estado": "Acre",
+    "cidade": "Cruzeiro do Sul",
+    "vara": "Vara Única"
+  },
+  {
+    "id": 9,
+    "estado": "Amapá",
+    "cidade": "Macapá",
+    "vara": "1ª Cível"
+  },
+  {
+    "id": 10,
+    "estado": "Amapá",
+    "cidade": "Macapá",
+    "vara": "2ª Cível"
+  },
+  {
+    "id": 11,
+    "estado": "Amapá",
+    "cidade": "Macapá",
+    "vara": "3ª Juizado Especial Cível"
+  },
+  {
+    "id": 12,
+    "estado": "Amapá",
+    "cidade": "Macapá",
+    "vara": "4ª Criminal"
+  },
+  {
+    "id": 13,
+    "estado": "Amapá",
+    "cidade": "Macapá",
+    "vara": "5ª Juizado Especial Cível"
+  },
+  {
+    "id": 14,
+    "estado": "Amapá",
+    "cidade": "Macapá",
+    "vara": "6ª Cível"
+  },
+  {
+    "id": 15,
+    "estado": "Amapá",
+    "cidade": "Laranjal do Jari",
+    "vara": "Vara Única"
+  },
+  {
+    "id": 16,
+    "estado": "Amapá",
+    "cidade": "Oiapoque",
+    "vara": "Vara Única"
+  },
+  {
+    "id": 17,
+    "estado": "Amazonas",
+    "cidade": "Manaus",
+    "vara": "1ª Cível"
+  },
+  {
+    "id": 18,
+    "estado": "Amazonas",
+    "cidade": "Manaus",
+    "vara": "2ª Criminal Especializada"
+  },
+  {
+    "id": 19,
+    "estado": "Amazonas",
+    "cidade": "Manaus",
+    "vara": "3ª Cível"
+  },
+  {
+    "id": 20,
+    "estado": "Amazonas",
+    "cidade": "Manaus",
+    "vara": "4ª Criminal"
+  },
+  {
+    "id": 21,
+    "estado": "Amazonas",
+    "cidade": "Manaus",
+    "vara": "5ª Execução Fiscal"
+  },
+  {
+    "id": 22,
+    "estado": "Amazonas",
+    "cidade": "Manaus",
+    "vara": "6ª Juizado Especial Cível"
+  },
+  {
+    "id": 23,
+    "estado": "Amazonas",
+    "cidade": "Manaus",
+    "vara": "7ª Ambiental"
+  },
+  {
+    "id": 24,
+    "estado": "Amazonas",
+    "cidade": "Manaus",
+    "vara": "8ª Juizado Especial Cível"
+  },
+  {
+    "id": 25,
+    "estado": "Amazonas",
+    "cidade": "Manaus",
+    "vara": "9ª Cível"
+  },
+  {
+    "id": 26,
+    "estado": "Amazonas",
+    "cidade": "Manaus",
+    "vara": "1ª Relatoria TR"
+  },
+  {
+    "id": 27,
+    "estado": "Amazonas",
+    "cidade": "Manaus",
+    "vara": "2ª Relatoria TR"
+  },
+  {
+    "id": 28,
+    "estado": "Amazonas",
+    "cidade": "Manaus",
+    "vara": "3ª Relatoria TR"
+  },
+  {
+    "id": 29,
+    "estado": "Amazonas",
+    "cidade": "Tabatinga",
+    "vara": "Vara Única"
+  },
+  {
+    "id": 30,
+    "estado": "Bahia",
+    "cidade": "Salvador",
+    "vara": "1ª Cível"
+  },
+  {
+    "id": 31,
+    "estado": "Bahia",
+    "cidade": "Salvador",
+    "vara": "2ª Criminal Especializada"
+  },
+  {
+    "id": 32,
+    "estado": "Bahia",
+    "cidade": "Salvador",
+    "vara": "3ª Cível"
+  },
+  {
+    "id": 33,
+    "estado": "Bahia",
+    "cidade": "Salvador",
+    "vara": "4ª Cível"
+  },
+  {
+    "id": 34,
+    "estado": "Bahia",
+    "cidade": "Salvador",
+    "vara": "5ª Juizado Especial Cível"
+  },
+  {
+    "id": 35,
+    "estado": "Bahia",
+    "cidade": "Salvador",
+    "vara": "6ª Cível"
+  },
+  {
+    "id": 36,
+    "estado": "Bahia",
+    "cidade": "Salvador",
+    "vara": "7ª Cível Agrária"
+  },
+  {
+    "id": 37,
+    "estado": "Bahia",
+    "cidade": "Salvador",
+    "vara": "8ª Execução Fiscal"
+  },
+  {
+    "id": 38,
+    "estado": "Bahia",
+    "cidade": "Salvador",
+    "vara": "9ª Juizado Especial Cível"
+  },
+  {
+    "id": 39,
+    "estado": "Bahia",
+    "cidade": "Salvador",
+    "vara": "10ª Cível"
+  },
+  {
+    "id": 40,
+    "estado": "Bahia",
+    "cidade": "Salvador",
+    "vara": "11ª Cível"
+  },
+  {
+    "id": 41,
+    "estado": "Bahia",
+    "cidade": "Salvador",
+    "vara": "12ª Cível"
+  },
+  {
+    "id": 42,
+    "estado": "Bahia",
+    "cidade": "Salvador",
+    "vara": "13ª Cível"
+  },
+  {
+    "id": 43,
+    "estado": "Bahia",
+    "cidade": "Salvador",
+    "vara": "14ª Cível"
+  },
+  {
+    "id": 44,
+    "estado": "Bahia",
+    "cidade": "Salvador",
+    "vara": "15ª Juizado Especial Cível"
+  },
+  {
+    "id": 45,
+    "estado": "Bahia",
+    "cidade": "Salvador",
+    "vara": "16ª Cível"
+  },
+  {
+    "id": 46,
+    "estado": "Bahia",
+    "cidade": "Salvador",
+    "vara": "17ª Criminal"
+  },
+  {
+    "id": 47,
+    "estado": "Bahia",
+    "cidade": "Salvador",
+    "vara": "18ª Execução Fiscal"
+  },
+  {
+    "id": 48,
+    "estado": "Bahia",
+    "cidade": "Salvador",
+    "vara": "19ª Execução Fiscal"
+  },
+  {
+    "id": 49,
+    "estado": "Bahia",
+    "cidade": "Salvador",
+    "vara": "20ª Execução Fiscal"
+  },
+  {
+    "id": 50,
+    "estado": "Bahia",
+    "cidade": "Salvador",
+    "vara": "21ª Juizado Especial Cível"
+  },
+  {
+    "id": 51,
+    "estado": "Bahia",
+    "cidade": "Salvador",
+    "vara": "22ª Juizado Especial Cível"
+  },
+  {
+    "id": 52,
+    "estado": "Bahia",
+    "cidade": "Salvador",
+    "vara": "23ª Juizado Especial Cível"
+  },
+  {
+    "id": 53,
+    "estado": "Bahia",
+    "cidade": "Salvador",
+    "vara": "24ª Execução Fiscal"
+  },
+  {
+    "id": 54,
+    "estado": "Bahia",
+    "cidade": "Salvador",
+    "vara": "1ª Relatoria TR - 1ª TR"
+  },
+  {
+    "id": 55,
+    "estado": "Bahia",
+    "cidade": "Salvador",
+    "vara": "2ª Relatoria TR - 1ª TR"
+  },
+  {
+    "id": 56,
+    "estado": "Bahia",
+    "cidade": "Salvador",
+    "vara": "3ª Relatoria TR - 1ª TR"
+  },
+  {
+    "id": 57,
+    "estado": "Bahia",
+    "cidade": "Salvador",
+    "vara": "1ª Relatoria TR - 2ª TR"
+  },
+  {
+    "id": 58,
+    "estado": "Bahia",
+    "cidade": "Salvador",
+    "vara": "2ª Relatoria TR - 2ª TR"
+  },
+  {
+    "id": 59,
+    "estado": "Bahia",
+    "cidade": "Salvador",
+    "vara": "3ª Relatoria TR - 2ª TR"
+  },
+  {
+    "id": 60,
+    "estado": "Bahia",
+    "cidade": "Salvador",
+    "vara": "1ª Relatoria TR - 3ª TR"
+  },
+  {
+    "id": 61,
+    "estado": "Bahia",
+    "cidade": "Salvador",
+    "vara": "2ª Relatoria TR - 3ª TR"
+  },
+  {
+    "id": 62,
+    "estado": "Bahia",
+    "cidade": "Salvador",
+    "vara": "3ª Relatoria TR - 3ª TR"
+  },
+  {
+    "id": 63,
+    "estado": "Bahia",
+    "cidade": "Salvador",
+    "vara": "1ª Relatoria TR - 4ª TR"
+  },
+  {
+    "id": 64,
+    "estado": "Bahia",
+    "cidade": "Salvador",
+    "vara": "2ª Relatoria TR - 4ª TR"
+  },
+  {
+    "id": 65,
+    "estado": "Bahia",
+    "cidade": "Salvador",
+    "vara": "3ª Relatoria TR - 4ª TR"
+  },
+  {
+    "id": 66,
+    "estado": "Bahia",
+    "cidade": "Alagoinhas",
+    "vara": "Vara Única"
+  },
+  {
+    "id": 67,
+    "estado": "Bahia",
+    "cidade": "Barreiras",
+    "vara": "Vara Única"
+  },
+  {
+    "id": 68,
+    "estado": "Bahia",
+    "cidade": "Bom Jesus da Lapa",
+    "vara": "Vara Única"
+  },
+  {
+    "id": 69,
+    "estado": "Bahia",
+    "cidade": "Campo Formoso",
+    "vara": "Vara Única"
+  },
+  {
+    "id": 70,
+    "estado": "Bahia",
+    "cidade": "Eunápolis",
+    "vara": "Vara Única"
+  },
+  {
+    "id": 71,
+    "estado": "Bahia",
+    "cidade": "Feira de Santana",
+    "vara": "1ª Geral"
+  },
+  {
+    "id": 72,
+    "estado": "Bahia",
+    "cidade": "Feira de Santana",
+    "vara": "2ª Geral"
+  },
+  {
+    "id": 73,
+    "estado": "Bahia",
+    "cidade": "Feira de Santana",
+    "vara": "3ª Geral"
+  },
+  {
+    "id": 74,
+    "estado": "Bahia",
+    "cidade": "Guanambi",
+    "vara": "Vara Única"
+  },
+  {
+    "id": 75,
+    "estado": "Bahia",
+    "cidade": "Ilhéus",
+    "vara": "Vara Única"
+  },
+  {
+    "id": 76,
+    "estado": "Bahia",
+    "cidade": "Irecê",
+    "vara": "Vara Única"
+  },
+  {
+    "id": 77,
+    "estado": "Bahia",
+    "cidade": "Itabuna",
+    "vara": "1ª Geral"
+  },
+  {
+    "id": 78,
+    "estado": "Bahia",
+    "cidade": "Itabuna",
+    "vara": "2ª Geral"
+  },
+  {
+    "id": 79,
+    "estado": "Bahia",
+    "cidade": "Jequié",
+    "vara": "Vara Única"
+  },
+  {
+    "id": 80,
+    "estado": "Bahia",
+    "cidade": "Juazeiro",
+    "vara": "Vara Única"
+  },
+  {
+    "id": 81,
+    "estado": "Bahia",
+    "cidade": "Paulo Afonso",
+    "vara": "Vara Única"
+  },
+  {
+    "id": 82,
+    "estado": "Bahia",
+    "cidade": "Teixeira de Freitas",
+    "vara": "Vara Única"
+  },
+  {
+    "id": 83,
+    "estado": "Bahia",
+    "cidade": "Vitória da Conquista",
+    "vara": "1ª Geral"
+  },
+  {
+    "id": 84,
+    "estado": "Bahia",
+    "cidade": "Vitória da Conquista",
+    "vara": "2ª Geral"
+  },
+  {
+    "id": 85,
+    "estado": "Distrito Federal",
+    "cidade": "Brasília",
+    "vara": "1ª Juizado Especial Cível"
+  },
+  {
+    "id": 86,
+    "estado": "Distrito Federal",
+    "cidade": "Brasília",
+    "vara": "2ª Juizado Especial Cível"
+  },
+  {
+    "id": 87,
+    "estado": "Distrito Federal",
+    "cidade": "Brasília",
+    "vara": "3ª Cível Saúde"
+  },
+  {
+    "id": 88,
+    "estado": "Distrito Federal",
+    "cidade": "Brasília",
+    "vara": "4ª Cível"
+  },
+  {
+    "id": 89,
+    "estado": "Distrito Federal",
+    "cidade": "Brasília",
+    "vara": "5ª Cível"
+  },
+  {
+    "id": 90,
+    "estado": "Distrito Federal",
+    "cidade": "Brasília",
+    "vara": "6ª Cível"
+  },
+  {
+    "id": 91,
+    "estado": "Distrito Federal",
+    "cidade": "Brasília",
+    "vara": "7ª Cível"
+  },
+  {
+    "id": 92,
+    "estado": "Distrito Federal",
+    "cidade": "Brasília",
+    "vara": "8ª Cível"
+  },
+  {
+    "id": 93,
+    "estado": "Distrito Federal",
+    "cidade": "Brasília",
+    "vara": "9ª Cível"
+  },
+  {
+    "id": 94,
+    "estado": "Distrito Federal",
+    "cidade": "Brasília",
+    "vara": "10ª Criminal Especializada"
+  },
+  {
+    "id": 95,
+    "estado": "Distrito Federal",
+    "cidade": "Brasília",
+    "vara": "11ª Execução Fiscal"
+  },
+  {
+    "id": 96,
+    "estado": "Distrito Federal",
+    "cidade": "Brasília",
+    "vara": "12ª Criminal Especializada"
+  },
+  {
+    "id": 97,
+    "estado": "Distrito Federal",
+    "cidade": "Brasília",
+    "vara": "13ª Cível"
+  },
+  {
+    "id": 98,
+    "estado": "Distrito Federal",
+    "cidade": "Brasília",
+    "vara": "14ª Cível"
+  },
+  {
+    "id": 99,
+    "estado": "Distrito Federal",
+    "cidade": "Brasília",
+    "vara": "15ª Criminal"
+  },
+  {
+    "id": 100,
+    "estado": "Distrito Federal",
+    "cidade": "Brasília",
+    "vara": "16ª Cível"
+  },
+  {
+    "id": 101,
+    "estado": "Distrito Federal",
+    "cidade": "Brasília",
+    "vara": "17ª Cível"
+  },
+  {
+    "id": 102,
+    "estado": "Distrito Federal",
+    "cidade": "Brasília",
+    "vara": "18ª Execução Fiscal"
+  },
+  {
+    "id": 103,
+    "estado": "Distrito Federal",
+    "cidade": "Brasília",
+    "vara": "19ª Execução Fiscal"
+  },
+  {
+    "id": 104,
+    "estado": "Distrito Federal",
+    "cidade": "Brasília",
+    "vara": "20ª Cível"
+  },
+  {
+    "id": 105,
+    "estado": "Distrito Federal",
+    "cidade": "Brasília",
+    "vara": "21ª Cível Saúde"
+  },
+  {
+    "id": 106,
+    "estado": "Distrito Federal",
+    "cidade": "Brasília",
+    "vara": "22ª Cível"
+  },
+  {
+    "id": 107,
+    "estado": "Distrito Federal",
+    "cidade": "Brasília",
+    "vara": "23ª Juizado Especial Cível"
+  },
+  {
+    "id": 108,
+    "estado": "Distrito Federal",
+    "cidade": "Brasília",
+    "vara": "24ª Juizado Especial Cível"
+  },
+  {
+    "id": 109,
+    "estado": "Distrito Federal",
+    "cidade": "Brasília",
+    "vara": "25ª Juizado Especial Cível"
+  },
+  {
+    "id": 110,
+    "estado": "Distrito Federal",
+    "cidade": "Brasília",
+    "vara": "26ª Juizado Especial Cível"
+  },
+  {
+    "id": 111,
+    "estado": "Distrito Federal",
+    "cidade": "Brasília",
+    "vara": "27ª Juizado Especial Cível"
+  },
+  {
+    "id": 112,
+    "estado": "Distrito Federal",
+    "cidade": "Brasília",
+    "vara": "1ª Relatoria TR - 1ª TR"
+  },
+  {
+    "id": 113,
+    "estado": "Distrito Federal",
+    "cidade": "Brasília",
+    "vara": "2ª Relatoria TR - 1ª TR"
+  },
+  {
+    "id": 114,
+    "estado": "Distrito Federal",
+    "cidade": "Brasília",
+    "vara": "3ª Relatoria TR - 1ª TR"
+  },
+  {
+    "id": 115,
+    "estado": "Distrito Federal",
+    "cidade": "Brasília",
+    "vara": "1ª Relatoria TR - 2ª TR"
+  },
+  {
+    "id": 116,
+    "estado": "Distrito Federal",
+    "cidade": "Brasília",
+    "vara": "2ª Relatoria TR - 2ª TR"
+  },
+  {
+    "id": 117,
+    "estado": "Distrito Federal",
+    "cidade": "Brasília",
+    "vara": "3ª Relatoria TR - 2ª TR"
+  },
+  {
+    "id": 118,
+    "estado": "Distrito Federal",
+    "cidade": "Brasília",
+    "vara": "1ª Relatoria TR - 3ª TR"
+  },
+  {
+    "id": 119,
+    "estado": "Distrito Federal",
+    "cidade": "Brasília",
+    "vara": "2ª Relatoria TR - 3ª TR"
+  },
+  {
+    "id": 120,
+    "estado": "Distrito Federal",
+    "cidade": "Brasília",
+    "vara": "3ª Relatoria TR - 3ª TR"
+  },
+  {
+    "id": 121,
+    "estado": "Goiás",
+    "cidade": "Goiânia",
+    "vara": "1ª Cível"
+  },
+  {
+    "id": 122,
+    "estado": "Goiás",
+    "cidade": "Goiânia",
+    "vara": "2ª Cível"
+  },
+  {
+    "id": 123,
+    "estado": "Goiás",
+    "cidade": "Goiânia",
+    "vara": "3ª Cível"
+  },
+  {
+    "id": 124,
+    "estado": "Goiás",
+    "cidade": "Goiânia",
+    "vara": "4ª Cível"
+  },
+  {
+    "id": 125,
+    "estado": "Goiás",
+    "cidade": "Goiânia",
+    "vara": "5ª Criminal"
+  },
+  {
+    "id": 126,
+    "estado": "Goiás",
+    "cidade": "Goiânia",
+    "vara": "6ª Cível"
+  },
+  {
+    "id": 127,
+    "estado": "Goiás",
+    "cidade": "Goiânia",
+    "vara": "7ª Execução Fiscal"
+  },
+  {
+    "id": 128,
+    "estado": "Goiás",
+    "cidade": "Goiânia",
+    "vara": "8ª Cível"
+  },
+  {
+    "id": 129,
+    "estado": "Goiás",
+    "cidade": "Goiânia",
+    "vara": "9ª Cível"
+  },
+  {
+    "id": 130,
+    "estado": "Goiás",
+    "cidade": "Goiânia",
+    "vara": "10ª Execução Fiscal"
+  },
+  {
+    "id": 131,
+    "estado": "Goiás",
+    "cidade": "Goiânia",
+    "vara": "11ª Criminal"
+  },
+  {
+    "id": 132,
+    "estado": "Goiás",
+    "cidade": "Goiânia",
+    "vara": "12ª Execução Fiscal"
+  },
+  {
+    "id": 133,
+    "estado": "Goiás",
+    "cidade": "Goiânia",
+    "vara": "13ª Juizado Especial Cível"
+  },
+  {
+    "id": 134,
+    "estado": "Goiás",
+    "cidade": "Goiânia",
+    "vara": "14ª Juizado Especial Cível"
+  },
+  {
+    "id": 135,
+    "estado": "Goiás",
+    "cidade": "Goiânia",
+    "vara": "15ª Juizado Especial Cível"
+  },
+  {
+    "id": 136,
+    "estado": "Goiás",
+    "cidade": "Goiânia",
+    "vara": "16ª Juizado Especial Cível"
+  },
+  {
+    "id": 137,
+    "estado": "Goiás",
+    "cidade": "Goiânia",
+    "vara": "1ª Relatoria TR - 1ª TR"
+  },
+  {
+    "id": 138,
+    "estado": "Goiás",
+    "cidade": "Goiânia",
+    "vara": "2ª Relatoria TR - 1ª TR"
+  },
+  {
+    "id": 139,
+    "estado": "Goiás",
+    "cidade": "Goiânia",
+    "vara": "3ª Relatoria TR - 1ª TR"
+  },
+  {
+    "id": 140,
+    "estado": "Goiás",
+    "cidade": "Goiânia",
+    "vara": "1ª Relatoria TR - 2ª TR"
+  },
+  {
+    "id": 141,
+    "estado": "Goiás",
+    "cidade": "Goiânia",
+    "vara": "2ª Relatoria TR - 2ª TR"
+  },
+  {
+    "id": 142,
+    "estado": "Goiás",
+    "cidade": "Goiânia",
+    "vara": "3ª Relatoria TR - 2ª TR"
+  },
+  {
+    "id": 143,
+    "estado": "Goiás",
+    "cidade": "Anápolis",
+    "vara": "1ª Geral"
+  },
+  {
+    "id": 144,
+    "estado": "Goiás",
+    "cidade": "Anápolis",
+    "vara": "2ª Geral"
+  },
+  {
+    "id": 145,
+    "estado": "Goiás",
+    "cidade": "Aparecida de Goiânia",
+    "vara": "Vara Única"
+  },
+  {
+    "id": 146,
+    "estado": "Goiás",
+    "cidade": "Formosa",
+    "vara": "Vara Única"
+  },
+  {
+    "id": 147,
+    "estado": "Goiás",
+    "cidade": "Itumbiara",
+    "vara": "Vara Única"
+  },
+  {
+    "id": 148,
+    "estado": "Goiás",
+    "cidade": "Jataí",
+    "vara": "Vara Única"
+  },
+  {
+    "id": 149,
+    "estado": "Goiás",
+    "cidade": "Luziânia",
+    "vara": "Vara Única"
+  },
+  {
+    "id": 150,
+    "estado": "Goiás",
+    "cidade": "Rio Verde",
+    "vara": "Vara Única"
+  },
+  {
+    "id": 151,
+    "estado": "Goiás",
+    "cidade": "Uruaçu",
+    "vara": "Vara Única"
+  },
+  {
+    "id": 152,
+    "estado": "Maranhão",
+    "cidade": "São Luiz",
+    "vara": "1ª Criminal Especializada"
+  },
+  {
+    "id": 153,
+    "estado": "Maranhão",
+    "cidade": "São Luiz",
+    "vara": "2ª Criminal"
+  },
+  {
+    "id": 154,
+    "estado": "Maranhão",
+    "cidade": "São Luiz",
+    "vara": "3ª Cível"
+  },
+  {
+    "id": 155,
+    "estado": "Maranhão",
+    "cidade": "São Luiz",
+    "vara": "4ª Execução Fiscal"
+  },
+  {
+    "id": 156,
+    "estado": "Maranhão",
+    "cidade": "São Luiz",
+    "vara": "5ª Cível"
+  },
+  {
+    "id": 157,
+    "estado": "Maranhão",
+    "cidade": "São Luiz",
+    "vara": "6ª Cível"
+  },
+  {
+    "id": 158,
+    "estado": "Maranhão",
+    "cidade": "São Luiz",
+    "vara": "7ª Juizado Especial Cível"
+  },
+  {
+    "id": 159,
+    "estado": "Maranhão",
+    "cidade": "São Luiz",
+    "vara": "8ª Ambiental"
+  },
+  {
+    "id": 160,
+    "estado": "Maranhão",
+    "cidade": "São Luiz",
+    "vara": "9ª Juizado Especial Cível"
+  },
+  {
+    "id": 161,
+    "estado": "Maranhão",
+    "cidade": "São Luiz",
+    "vara": "10ª Juizado Especial Cível"
+  },
+  {
+    "id": 162,
+    "estado": "Maranhão",
+    "cidade": "São Luiz",
+    "vara": "11ª Execução Fiscal"
+  },
+  {
+    "id": 163,
+    "estado": "Maranhão",
+    "cidade": "São Luiz",
+    "vara": "12ª Juizado Especial Cível"
+  },
+  {
+    "id": 164,
+    "estado": "Maranhão",
+    "cidade": "São Luiz",
+    "vara": "13ª Cível"
+  },
+  {
+    "id": 165,
+    "estado": "Maranhão",
+    "cidade": "São Luiz",
+    "vara": "1ª Relatoria TR - 1ª TR"
+  },
+  {
+    "id": 166,
+    "estado": "Maranhão",
+    "cidade": "São Luiz",
+    "vara": "2ª Relatoria TR - 1ª TR"
+  },
+  {
+    "id": 167,
+    "estado": "Maranhão",
+    "cidade": "São Luiz",
+    "vara": "3ª Relatoria TR - 1ª TR"
+  },
+  {
+    "id": 168,
+    "estado": "Maranhão",
+    "cidade": "São Luiz",
+    "vara": "1ª Relatoria TR - 2ª TR"
+  },
+  {
+    "id": 169,
+    "estado": "Maranhão",
+    "cidade": "São Luiz",
+    "vara": "2ª Relatoria TR - 2ª TR"
+  },
+  {
+    "id": 170,
+    "estado": "Maranhão",
+    "cidade": "São Luiz",
+    "vara": "3ª Relatoria TR - 2ª TR"
+  },
+  {
+    "id": 171,
+    "estado": "Maranhão",
+    "cidade": "Bacabal",
+    "vara": "Vara Única"
+  },
+  {
+    "id": 172,
+    "estado": "Maranhão",
+    "cidade": "Balsas",
+    "vara": "Vara Única"
+  },
+  {
+    "id": 173,
+    "estado": "Maranhão",
+    "cidade": "Caxias",
+    "vara": "Vara Única"
+  },
+  {
+    "id": 174,
+    "estado": "Maranhão",
+    "cidade": "Imperatriz",
+    "vara": "1ª Geral"
+  },
+  {
+    "id": 175,
+    "estado": "Maranhão",
+    "cidade": "Imperatriz",
+    "vara": "2ª Geral"
+  },
+  {
+    "id": 176,
+    "estado": "Mato Grosso",
+    "cidade": "Cuiabá",
+    "vara": "1ª Cível Agrária"
+  },
+  {
+    "id": 177,
+    "estado": "Mato Grosso",
+    "cidade": "Cuiabá",
+    "vara": "2ª Cível"
+  },
+  {
+    "id": 178,
+    "estado": "Mato Grosso",
+    "cidade": "Cuiabá",
+    "vara": "3ª Cível"
+  },
+  {
+    "id": 179,
+    "estado": "Mato Grosso",
+    "cidade": "Cuiabá",
+    "vara": "4ª Execução Fiscal"
+  },
+  {
+    "id": 180,
+    "estado": "Mato Grosso",
+    "cidade": "Cuiabá",
+    "vara": "5ª Criminal Especializada"
+  },
+  {
+    "id": 181,
+    "estado": "Mato Grosso",
+    "cidade": "Cuiabá",
+    "vara": "6ª Juizado Especial Cível"
+  },
+  {
+    "id": 182,
+    "estado": "Mato Grosso",
+    "cidade": "Cuiabá",
+    "vara": "7ª Criminal"
+  },
+  {
+    "id": 183,
+    "estado": "Mato Grosso",
+    "cidade": "Cuiabá",
+    "vara": "8ª Cível"
+  },
+  {
+    "id": 184,
+    "estado": "Mato Grosso",
+    "cidade": "Cuiabá",
+    "vara": "9ª Juizado Especial Cível"
+  },
+  {
+    "id": 185,
+    "estado": "Mato Grosso",
+    "cidade": "Cuiabá",
+    "vara": "1ª Relatoria TR"
+  },
+  {
+    "id": 186,
+    "estado": "Mato Grosso",
+    "cidade": "Cuiabá",
+    "vara": "2ª Relatoria TR"
+  },
+  {
+    "id": 187,
+    "estado": "Mato Grosso",
+    "cidade": "Cuiabá",
+    "vara": "3ª Relatoria TR"
+  },
+  {
+    "id": 188,
+    "estado": "Mato Grosso",
+    "cidade": "Barra dos Garças",
+    "vara": "Vara Única"
+  },
+  {
+    "id": 189,
+    "estado": "Mato Grosso",
+    "cidade": "Cáceres",
+    "vara": "1ª Geral"
+  },
+  {
+    "id": 190,
+    "estado": "Mato Grosso",
+    "cidade": "Cáceres",
+    "vara": "2ª Geral"
+  },
+  {
+    "id": 191,
+    "estado": "Mato Grosso",
+    "cidade": "Diamantino",
+    "vara": "Vara Única"
+  },
+  {
+    "id": 192,
+    "estado": "Mato Grosso",
+    "cidade": "Juína",
+    "vara": "Vara Única"
+  },
+  {
+    "id": 193,
+    "estado": "Mato Grosso",
+    "cidade": "Rondonópolis",
+    "vara": "1ª Geral"
+  },
+  {
+    "id": 194,
+    "estado": "Mato Grosso",
+    "cidade": "Rondonópolis",
+    "vara": "2ª Juizado Especial"
+  },
+  {
+    "id": 195,
+    "estado": "Mato Grosso",
+    "cidade": "Sinop",
+    "vara": "1ª Geral"
+  },
+  {
+    "id": 196,
+    "estado": "Mato Grosso",
+    "cidade": "Sinop",
+    "vara": "2ª Geral"
+  },
+  {
+    "id": 197,
+    "estado": "Minas Gerais",
+    "cidade": "Belo Horizonte",
+    "vara": "1ª Cível (Antiga 3ª Vara)"
+  },
+  {
+    "id": 198,
+    "estado": "Minas Gerais",
+    "cidade": "Belo Horizonte",
+    "vara": "2ª Cível (Antiga 5ª Vara)"
+  },
+  {
+    "id": 199,
+    "estado": "Minas Gerais",
+    "cidade": "Belo Horizonte",
+    "vara": "3ª Cível (Antiga 6ª Vara)"
+  },
+  {
+    "id": 200,
+    "estado": "Minas Gerais",
+    "cidade": "Belo Horizonte",
+    "vara": "4ª Cível (Antiga 12ª Vara)"
+  },
+  {
+    "id": 201,
+    "estado": "Minas Gerais",
+    "cidade": "Belo Horizonte",
+    "vara": "5ª Cível (Antiga 14ª Vara)"
+  },
+  {
+    "id": 202,
+    "estado": "Minas Gerais",
+    "cidade": "Belo Horizonte",
+    "vara": "6ª Cível (Antiga 15ª Vara)"
+  },
+  {
+    "id": 203,
+    "estado": "Minas Gerais",
+    "cidade": "Belo Horizonte",
+    "vara": "7ª Cível (Antiga 16ª Vara)"
+  },
+  {
+    "id": 204,
+    "estado": "Minas Gerais",
+    "cidade": "Belo Horizonte",
+    "vara": "8ª Cível (Antiga 17ª Vara)"
+  },
+  {
+    "id": 205,
+    "estado": "Minas Gerais",
+    "cidade": "Belo Horizonte",
+    "vara": "9ª Cível (Antiga 18ª Vara)"
+  },
+  {
+    "id": 206,
+    "estado": "Minas Gerais",
+    "cidade": "Belo Horizonte",
+    "vara": "10ª Cível (Antiga 19ª Vara)"
+  },
+  {
+    "id": 207,
+    "estado": "Minas Gerais",
+    "cidade": "Belo Horizonte",
+    "vara": "11ª Cível (Antiga 20ª Vara)"
+  },
+  {
+    "id": 208,
+    "estado": "Minas Gerais",
+    "cidade": "Belo Horizonte",
+    "vara": "12ª Cível (Antiga 21ª Vara)"
+  },
+  {
+    "id": 209,
+    "estado": "Minas Gerais",
+    "cidade": "Belo Horizonte",
+    "vara": "13ª Cível (Antiga 22ª Vara)"
+  },
+  {
+    "id": 210,
+    "estado": "Minas Gerais",
+    "cidade": "Belo Horizonte",
+    "vara": "1ª Execução Fiscal (Antiga 23ª Vara)"
+  },
+  {
+    "id": 211,
+    "estado": "Minas Gerais",
+    "cidade": "Belo Horizonte",
+    "vara": "2ª Execução Fiscal (Antiga 24ª Vara)"
+  },
+  {
+    "id": 212,
+    "estado": "Minas Gerais",
+    "cidade": "Belo Horizonte",
+    "vara": "3ª Execução Fiscal (Antiga 25ª Vara)"
+  },
+  {
+    "id": 213,
+    "estado": "Minas Gerais",
+    "cidade": "Belo Horizonte",
+    "vara": "4ª Execução Fiscal (Antiga 26ª Vara)"
+  },
+  {
+    "id": 214,
+    "estado": "Minas Gerais",
+    "cidade": "Belo Horizonte",
+    "vara": "5ª Execução Fiscal (Antiga 27ª Vara)"
+  },
+  {
+    "id": 215,
+    "estado": "Minas Gerais",
+    "cidade": "Belo Horizonte",
+    "vara": "1ª Criminal (Antiga 4ª Vara)"
+  },
+  {
+    "id": 216,
+    "estado": "Minas Gerais",
+    "cidade": "Belo Horizonte",
+    "vara": "2ª Criminal (Antiga 9ª Vara)"
+  },
+  {
+    "id": 217,
+    "estado": "Minas Gerais",
+    "cidade": "Belo Horizonte",
+    "vara": "3ª Criminal (Antiga 11ª Vara)"
+  },
+  {
+    "id": 218,
+    "estado": "Minas Gerais",
+    "cidade": "Belo Horizonte",
+    "vara": "1ª Juizado Especial (Antiga 2ª Vara)"
+  },
+  {
+    "id": 219,
+    "estado": "Minas Gerais",
+    "cidade": "Belo Horizonte",
+    "vara": "2ª Juizado Especial (Antiga 28ª Vara)"
+  },
+  {
+    "id": 220,
+    "estado": "Minas Gerais",
+    "cidade": "Belo Horizonte",
+    "vara": "3ª Juizado Especial (Antiga 29ª Vara)"
+  },
+  {
+    "id": 221,
+    "estado": "Minas Gerais",
+    "cidade": "Belo Horizonte",
+    "vara": "4ª Juizado Especial (Antiga 30ª Vara)"
+  },
+  {
+    "id": 222,
+    "estado": "Minas Gerais",
+    "cidade": "Belo Horizonte",
+    "vara": "5ª Juizado Especial (Antiga 31ª Vara)"
+  },
+  {
+    "id": 223,
+    "estado": "Minas Gerais",
+    "cidade": "Belo Horizonte",
+    "vara": "6ª Juizado Especial (Antiga 32ª Vara)"
+  },
+  {
+    "id": 224,
+    "estado": "Minas Gerais",
+    "cidade": "Belo Horizonte",
+    "vara": "7ª Juizado Especial (Antiga 34ª Vara)"
+  },
+  {
+    "id": 225,
+    "estado": "Minas Gerais",
+    "cidade": "Belo Horizonte",
+    "vara": "1ª Relatoria TR - 1ª TR"
+  },
+  {
+    "id": 226,
+    "estado": "Minas Gerais",
+    "cidade": "Belo Horizonte",
+    "vara": "2ª Relatoria TR - 1ª TR"
+  },
+  {
+    "id": 227,
+    "estado": "Minas Gerais",
+    "cidade": "Belo Horizonte",
+    "vara": "3ª Relatoria TR - 1ª TR"
+  },
+  {
+    "id": 228,
+    "estado": "Minas Gerais",
+    "cidade": "Belo Horizonte",
+    "vara": "1ª Relatoria TR - 2ª TR"
+  },
+  {
+    "id": 229,
+    "estado": "Minas Gerais",
+    "cidade": "Belo Horizonte",
+    "vara": "2ª Relatoria TR - 2ª TR"
+  },
+  {
+    "id": 230,
+    "estado": "Minas Gerais",
+    "cidade": "Belo Horizonte",
+    "vara": "3ª Relatoria TR - 2ª TR"
+  },
+  {
+    "id": 231,
+    "estado": "Minas Gerais",
+    "cidade": "Belo Horizonte",
+    "vara": "1ª Relatoria TR - 3ª TR"
+  },
+  {
+    "id": 232,
+    "estado": "Minas Gerais",
+    "cidade": "Belo Horizonte",
+    "vara": "2ª Relatoria TR - 3ª TR"
+  },
+  {
+    "id": 233,
+    "estado": "Minas Gerais",
+    "cidade": "Belo Horizonte",
+    "vara": "3ª Relatoria TR - 3ª TR"
+  },
+  {
+    "id": 234,
+    "estado": "Minas Gerais",
+    "cidade": "Belo Horizonte",
+    "vara": "1ª Relatoria TR - 4ª TR"
+  },
+  {
+    "id": 235,
+    "estado": "Minas Gerais",
+    "cidade": "Belo Horizonte",
+    "vara": "2ª Relatoria TR - 4ª TR"
+  },
+  {
+    "id": 236,
+    "estado": "Minas Gerais",
+    "cidade": "Belo Horizonte",
+    "vara": "3ª Relatoria TR - 4ª TR"
+  },
+  {
+    "id": 237,
+    "estado": "Minas Gerais",
+    "cidade": "Belo Horizonte",
+    "vara": "1- Núcleo de Apoio ao 1º Grau"
+  },
+  {
+    "id": 238,
+    "estado": "Minas Gerais",
+    "cidade": "Belo Horizonte",
+    "vara": "2- Núcleo de Apoio ao 1º Grau"
+  },
+  {
+    "id": 239,
+    "estado": "Minas Gerais",
+    "cidade": "Belo Horizonte",
+    "vara": "3- Núcleo de Apoio ao 1º Grau"
+  },
+  {
+    "id": 240,
+    "estado": "Minas Gerais",
+    "cidade": "Contagem",
+    "vara": "1ª Geral"
+  },
+  {
+    "id": 241,
+    "estado": "Minas Gerais",
+    "cidade": "Contagem",
+    "vara": "2ª Geral"
+  },
+  {
+    "id": 242,
+    "estado": "Minas Gerais",
+    "cidade": "Contagem",
+    "vara": "3ª Execução Fiscal"
+  },
+  {
+    "id": 243,
+    "estado": "Minas Gerais",
+    "cidade": "Divinópolis",
+    "vara": "1ª Geral"
+  },
+  {
+    "id": 244,
+    "estado": "Minas Gerais",
+    "cidade": "Divinópolis",
+    "vara": "2ª Geral"
+  },
+  {
+    "id": 245,
+    "estado": "Minas Gerais",
+    "cidade": "Governador Valadares",
+    "vara": "1ª Geral"
+  },
+  {
+    "id": 246,
+    "estado": "Minas Gerais",
+    "cidade": "Governador Valadares",
+    "vara": "2ª Geral"
+  },
+  {
+    "id": 247,
+    "estado": "Minas Gerais",
+    "cidade": "Governador Valadares",
+    "vara": "3ª Juizado Especial Cível"
+  },
+  {
+    "id": 248,
+    "estado": "Minas Gerais",
+    "cidade": "Ipatinga",
+    "vara": "1ª Geral"
+  },
+  {
+    "id": 249,
+    "estado": "Minas Gerais",
+    "cidade": "Ipatinga",
+    "vara": "2ª Geral"
+  },
+  {
+    "id": 250,
+    "estado": "Minas Gerais",
+    "cidade": "Ituiutaba",
+    "vara": "Vara Única"
+  },
+  {
+    "id": 251,
+    "estado": "Minas Gerais",
+    "cidade": "Janaúba",
+    "vara": "Vara Única"
+  },
+  {
+    "id": 252,
+    "estado": "Minas Gerais",
+    "cidade": "Juiz de Fora",
+    "vara": "1ª Juizado Especial"
+  },
+  {
+    "id": 253,
+    "estado": "Minas Gerais",
+    "cidade": "Juiz de Fora",
+    "vara": "2ª Geral"
+  },
+  {
+    "id": 254,
+    "estado": "Minas Gerais",
+    "cidade": "Juiz de Fora",
+    "vara": "3ª Geral"
+  },
+  {
+    "id": 255,
+    "estado": "Minas Gerais",
+    "cidade": "Juiz de Fora",
+    "vara": "4ª Geral"
+  },
+  {
+    "id": 256,
+    "estado": "Minas Gerais",
+    "cidade": "Juiz de Fora",
+    "vara": "5ª Juizado Especial"
+  },
+  {
+    "id": 257,
+    "estado": "Minas Gerais",
+    "cidade": "Juiz de Fora",
+    "vara": "1ª Relatoria TR"
+  },
+  {
+    "id": 258,
+    "estado": "Minas Gerais",
+    "cidade": "Juiz de Fora",
+    "vara": "2ª Relatoria TR"
+  },
+  {
+    "id": 259,
+    "estado": "Minas Gerais",
+    "cidade": "Juiz de Fora",
+    "vara": "3ª Relatoria TR"
+  },
+  {
+    "id": 260,
+    "estado": "Minas Gerais",
+    "cidade": "Lavras",
+    "vara": "Vara Única"
+  },
+  {
+    "id": 261,
+    "estado": "Minas Gerais",
+    "cidade": "Manhuaçu",
+    "vara": "Vara Única"
+  },
+  {
+    "id": 262,
+    "estado": "Minas Gerais",
+    "cidade": "Montes Claros",
+    "vara": "1ª Geral"
+  },
+  {
+    "id": 263,
+    "estado": "Minas Gerais",
+    "cidade": "Montes Claros",
+    "vara": "2ª Geral"
+  },
+  {
+    "id": 264,
+    "estado": "Minas Gerais",
+    "cidade": "Montes Claros",
+    "vara": "3ª Geral"
+  },
+  {
+    "id": 265,
+    "estado": "Minas Gerais",
+    "cidade": "Muriaé",
+    "vara": "Vara Única"
+  },
+  {
+    "id": 266,
+    "estado": "Minas Gerais",
+    "cidade": "Paracatu",
+    "vara": "Vara Única"
+  },
+  {
+    "id": 267,
+    "estado": "Minas Gerais",
+    "cidade": "Passos",
+    "vara": "Vara Única"
+  },
+  {
+    "id": 268,
+    "estado": "Minas Gerais",
+    "cidade": "Patos",
+    "vara": "1ª Geral"
+  },
+  {
+    "id": 269,
+    "estado": "Minas Gerais",
+    "cidade": "Patos",
+    "vara": "2ª Geral"
+  },
+  {
+    "id": 270,
+    "estado": "Minas Gerais",
+    "cidade": "Poços de Caldas",
+    "vara": "Vara Única"
+  },
+  {
+    "id": 271,
+    "estado": "Minas Gerais",
+    "cidade": "Ponte Nova",
+    "vara": "Vara Única"
+  },
+  {
+    "id": 272,
+    "estado": "Minas Gerais",
+    "cidade": "Pouso Alegre",
+    "vara": "1ª Geral"
+  },
+  {
+    "id": 273,
+    "estado": "Minas Gerais",
+    "cidade": "Pouso Alegre",
+    "vara": "2ª Geral"
+  },
+  {
+    "id": 274,
+    "estado": "Minas Gerais",
+    "cidade": "São João Del Rei",
+    "vara": "Vara Única"
+  },
+  {
+    "id": 275,
+    "estado": "Minas Gerais",
+    "cidade": "São Sebastião do Paraíso",
+    "vara": "Vara Única"
+  },
+  {
+    "id": 276,
+    "estado": "Minas Gerais",
+    "cidade": "Sete Lagoas",
+    "vara": "1ª Geral"
+  },
+  {
+    "id": 277,
+    "estado": "Minas Gerais",
+    "cidade": "Sete Lagoas",
+    "vara": "2ª Geral"
+  },
+  {
+    "id": 278,
+    "estado": "Minas Gerais",
+    "cidade": "Teófilo Otoni",
+    "vara": "Vara Única"
+  },
+  {
+    "id": 279,
+    "estado": "Minas Gerais",
+    "cidade": "Uberaba",
+    "vara": "1ª Geral"
+  },
+  {
+    "id": 280,
+    "estado": "Minas Gerais",
+    "cidade": "Uberaba",
+    "vara": "2ª Geral"
+  },
+  {
+    "id": 281,
+    "estado": "Minas Gerais",
+    "cidade": "Uberaba",
+    "vara": "3ª Juizado Especial"
+  },
+  {
+    "id": 282,
+    "estado": "Minas Gerais",
+    "cidade": "Uberaba",
+    "vara": "4ª Geral"
+  },
+  {
+    "id": 283,
+    "estado": "Minas Gerais",
+    "cidade": "Uberlândia",
+    "vara": "1ª Geral"
+  },
+  {
+    "id": 284,
+    "estado": "Minas Gerais",
+    "cidade": "Uberlândia",
+    "vara": "2ª Geral"
+  },
+  {
+    "id": 285,
+    "estado": "Minas Gerais",
+    "cidade": "Uberlândia",
+    "vara": "3ª Geral"
+  },
+  {
+    "id": 286,
+    "estado": "Minas Gerais",
+    "cidade": "Uberlândia",
+    "vara": "4ª Juizado Especial"
+  },
+  {
+    "id": 287,
+    "estado": "Minas Gerais",
+    "cidade": "Uberlândia",
+    "vara": "5ª Execução Fiscal"
+  },
+  {
+    "id": 288,
+    "estado": "Minas Gerais",
+    "cidade": "Uberlândia",
+    "vara": "1ª Relatoria TR"
+  },
+  {
+    "id": 289,
+    "estado": "Minas Gerais",
+    "cidade": "Uberlândia",
+    "vara": "2ª Relatoria TR"
+  },
+  {
+    "id": 290,
+    "estado": "Minas Gerais",
+    "cidade": "Uberlândia",
+    "vara": "3ª Relatoria TR"
+  },
+  {
+    "id": 291,
+    "estado": "Minas Gerais",
+    "cidade": "Unaí",
+    "vara": "Vara Única"
+  },
+  {
+    "id": 292,
+    "estado": "Minas Gerais",
+    "cidade": "Varginha",
+    "vara": "1ª Geral"
+  },
+  {
+    "id": 293,
+    "estado": "Minas Gerais",
+    "cidade": "Varginha",
+    "vara": "2ª Geral"
+  },
+  {
+    "id": 294,
+    "estado": "Minas Gerais",
+    "cidade": "Viçosa",
+    "vara": "Vara Única"
+  },
+  {
+    "id": 295,
+    "estado": "Pará",
+    "cidade": "Belém",
+    "vara": "1ª Cível"
+  },
+  {
+    "id": 296,
+    "estado": "Pará",
+    "cidade": "Belém",
+    "vara": "2ª Cível"
+  },
+  {
+    "id": 297,
+    "estado": "Pará",
+    "cidade": "Belém",
+    "vara": "3ª Criminal"
+  },
+  {
+    "id": 298,
+    "estado": "Pará",
+    "cidade": "Belém",
+    "vara": "4ª Criminal Especializada"
+  },
+  {
+    "id": 299,
+    "estado": "Pará",
+    "cidade": "Belém",
+    "vara": "5ª Cível"
+  },
+  {
+    "id": 300,
+    "estado": "Pará",
+    "cidade": "Belém",
+    "vara": "6ª Execução Fiscal"
+  },
+  {
+    "id": 301,
+    "estado": "Pará",
+    "cidade": "Belém",
+    "vara": "7ª Execução Fiscal"
+  },
+  {
+    "id": 302,
+    "estado": "Pará",
+    "cidade": "Belém",
+    "vara": "8ª Juizado Especial Cível"
+  },
+  {
+    "id": 303,
+    "estado": "Pará",
+    "cidade": "Belém",
+    "vara": "9ª Ambiental"
+  },
+  {
+    "id": 304,
+    "estado": "Pará",
+    "cidade": "Belém",
+    "vara": "10ª Juizado Especial Cível"
+  },
+  {
+    "id": 305,
+    "estado": "Pará",
+    "cidade": "Belém",
+    "vara": "11ª Juizado Especial Cível"
+  },
+  {
+    "id": 306,
+    "estado": "Pará",
+    "cidade": "Belém",
+    "vara": "12ª Juizado Especial Cível"
+  },
+  {
+    "id": 307,
+    "estado": "Pará",
+    "cidade": "Belém",
+    "vara": "1ª Relatoria TR - 1ª TR"
+  },
+  {
+    "id": 308,
+    "estado": "Pará",
+    "cidade": "Belém",
+    "vara": "2ª Relatoria TR - 1ª TR"
+  },
+  {
+    "id": 309,
+    "estado": "Pará",
+    "cidade": "Belém",
+    "vara": "3ª Relatoria TR - 1ª TR"
+  },
+  {
+    "id": 310,
+    "estado": "Pará",
+    "cidade": "Belém",
+    "vara": "1ª Relatoria TR - 2ª TR"
+  },
+  {
+    "id": 311,
+    "estado": "Pará",
+    "cidade": "Belém",
+    "vara": "2ª Relatoria TR - 2ª TR"
+  },
+  {
+    "id": 312,
+    "estado": "Pará",
+    "cidade": "Belém",
+    "vara": "3ª Relatoria TR - 2ª TR"
+  },
+  {
+    "id": 313,
+    "estado": "Pará",
+    "cidade": "Altamira",
+    "vara": "Vara Única"
+  },
+  {
+    "id": 314,
+    "estado": "Pará",
+    "cidade": "Castanhal",
+    "vara": "Vara Única"
+  },
+  {
+    "id": 315,
+    "estado": "Pará",
+    "cidade": "Itaituba",
+    "vara": "Vara Única"
+  },
+  {
+    "id": 316,
+    "estado": "Pará",
+    "cidade": "Marabá",
+    "vara": "1ª Geral"
+  },
+  {
+    "id": 317,
+    "estado": "Pará",
+    "cidade": "Marabá",
+    "vara": "2ª Ambiental"
+  },
+  {
+    "id": 318,
+    "estado": "Pará",
+    "cidade": "Paragominas",
+    "vara": "Vara Única"
+  },
+  {
+    "id": 319,
+    "estado": "Pará",
+    "cidade": "Redenção",
+    "vara": "Vara Única"
+  },
+  {
+    "id": 320,
+    "estado": "Pará",
+    "cidade": "Santarém",
+    "vara": "1ª Geral"
+  },
+  {
+    "id": 321,
+    "estado": "Pará",
+    "cidade": "Santarém",
+    "vara": "2ª Ambiental"
+  },
+  {
+    "id": 322,
+    "estado": "Pará",
+    "cidade": "Tucuruí",
+    "vara": "Vara Única"
+  },
+  {
+    "id": 323,
+    "estado": "Piauí",
+    "cidade": "Teresina",
+    "vara": "1ª Criminal Especializada"
+  },
+  {
+    "id": 324,
+    "estado": "Piauí",
+    "cidade": "Teresina",
+    "vara": "2ª Cível"
+  },
+  {
+    "id": 325,
+    "estado": "Piauí",
+    "cidade": "Teresina",
+    "vara": "3ª Criminal"
+  },
+  {
+    "id": 326,
+    "estado": "Piauí",
+    "cidade": "Teresina",
+    "vara": "4ª Execução Fiscal"
+  },
+  {
+    "id": 327,
+    "estado": "Piauí",
+    "cidade": "Teresina",
+    "vara": "5ª Cível"
+  },
+  {
+    "id": 328,
+    "estado": "Piauí",
+    "cidade": "Teresina",
+    "vara": "6ª Juizado Especial Cível"
+  },
+  {
+    "id": 329,
+    "estado": "Piauí",
+    "cidade": "Teresina",
+    "vara": "7ª Juizado Especial Cível"
+  },
+  {
+    "id": 330,
+    "estado": "Piauí",
+    "cidade": "Teresina",
+    "vara": "8ª Juizado Especial Cível"
+  },
+  {
+    "id": 331,
+    "estado": "Piauí",
+    "cidade": "Teresina",
+    "vara": "1ª Relatoria TR"
+  },
+  {
+    "id": 332,
+    "estado": "Piauí",
+    "cidade": "Teresina",
+    "vara": "2ª Relatoria TR"
+  },
+  {
+    "id": 333,
+    "estado": "Piauí",
+    "cidade": "Teresina",
+    "vara": "3ª Relatoria TR"
+  },
+  {
+    "id": 334,
+    "estado": "Piauí",
+    "cidade": "Corrente",
+    "vara": "Vara Única"
+  },
+  {
+    "id": 335,
+    "estado": "Piauí",
+    "cidade": "Floriano",
+    "vara": "Vara Única"
+  },
+  {
+    "id": 336,
+    "estado": "Piauí",
+    "cidade": "Parnaíba",
+    "vara": "Vara Única"
+  },
+  {
+    "id": 337,
+    "estado": "Piauí",
+    "cidade": "Picos",
+    "vara": "Vara Única"
+  },
+  {
+    "id": 338,
+    "estado": "Piauí",
+    "cidade": "São Raimundo Nonato",
+    "vara": "Vara Única"
+  },
+  {
+    "id": 339,
+    "estado": "Rondônia",
+    "cidade": "Porto Velho",
+    "vara": "1ª Cível"
+  },
+  {
+    "id": 340,
+    "estado": "Rondônia",
+    "cidade": "Porto Velho",
+    "vara": "2ª Cível"
+  },
+  {
+    "id": 341,
+    "estado": "Rondônia",
+    "cidade": "Porto Velho",
+    "vara": "3ª Criminal Especializada"
+  },
+  {
+    "id": 342,
+    "estado": "Rondônia",
+    "cidade": "Porto Velho",
+    "vara": "4ª Juizado Especial Cível"
+  },
+  {
+    "id": 343,
+    "estado": "Rondônia",
+    "cidade": "Porto Velho",
+    "vara": "5ª Ambiental"
+  },
+  {
+    "id": 344,
+    "estado": "Rondônia",
+    "cidade": "Porto Velho",
+    "vara": "6ª Juizado Especial Cível"
+  },
+  {
+    "id": 345,
+    "estado": "Rondônia",
+    "cidade": "Porto Velho",
+    "vara": "7ª Criminal"
+  },
+  {
+    "id": 346,
+    "estado": "Rondônia",
+    "cidade": "Porto Velho",
+    "vara": "1ª Relatoria TR"
+  },
+  {
+    "id": 347,
+    "estado": "Rondônia",
+    "cidade": "Porto Velho",
+    "vara": "2ª Relatoria TR"
+  },
+  {
+    "id": 348,
+    "estado": "Rondônia",
+    "cidade": "Porto Velho",
+    "vara": "3ª Relatoria TR"
+  },
+  {
+    "id": 349,
+    "estado": "Rondônia",
+    "cidade": "Ji-Paraná",
+    "vara": "1ª Geral"
+  },
+  {
+    "id": 350,
+    "estado": "Rondônia",
+    "cidade": "Ji-Paraná",
+    "vara": "2ª Geral"
+  },
+  {
+    "id": 351,
+    "estado": "Rondônia",
+    "cidade": "Vilhena",
+    "vara": "Vara Única"
+  },
+  {
+    "id": 352,
+    "estado": "Roraima",
+    "cidade": "Boa Vista",
+    "vara": "1ª Cível"
+  },
+  {
+    "id": 353,
+    "estado": "Roraima",
+    "cidade": "Boa Vista",
+    "vara": "2ª Cível"
+  },
+  {
+    "id": 354,
+    "estado": "Roraima",
+    "cidade": "Boa Vista",
+    "vara": "3ª Juizado Especial Cível"
+  },
+  {
+    "id": 355,
+    "estado": "Roraima",
+    "cidade": "Boa Vista",
+    "vara": "4ª Criminal"
+  },
+  {
+    "id": 356,
+    "estado": "Tocantins",
+    "cidade": "Palmas",
+    "vara": "1ª Cível"
+  },
+  {
+    "id": 357,
+    "estado": "Tocantins",
+    "cidade": "Palmas",
+    "vara": "2ª Cível"
+  },
+  {
+    "id": 358,
+    "estado": "Tocantins",
+    "cidade": "Palmas",
+    "vara": "3ª Juizado Especial Previdenciário"
+  },
+  {
+    "id": 359,
+    "estado": "Tocantins",
+    "cidade": "Palmas",
+    "vara": "4ª Criminal"
+  },
+  {
+    "id": 360,
+    "estado": "Tocantins",
+    "cidade": "Palmas",
+    "vara": "5ª Execução Fiscal"
+  },
+  {
+    "id": 361,
+    "estado": "Tocantins",
+    "cidade": "Palmas",
+    "vara": "1ª Relatoria TR"
+  },
+  {
+    "id": 362,
+    "estado": "Tocantins",
+    "cidade": "Palmas",
+    "vara": "2ª Relatoria TR"
+  },
+  {
+    "id": 363,
+    "estado": "Tocantins",
+    "cidade": "Palmas",
+    "vara": "3ª Relatoria TR"
+  },
+  {
+    "id": 364,
+    "estado": "Tocantins",
+    "cidade": "Araguaína",
+    "vara": "1ª Geral"
+  },
+  {
+    "id": 365,
+    "estado": "Tocantins",
+    "cidade": "Araguaína",
+    "vara": "2ª Geral"
+  },
+  {
+    "id": 366,
+    "estado": "Tocantins",
+    "cidade": "Gurupí",
+    "vara": "Vara Única"
+  }
+]
