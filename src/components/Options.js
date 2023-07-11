@@ -61,8 +61,10 @@ function Options() {
         alignItems="center"
       >
         <LocationsAutoComplete />
-        <Button variant="contained">Adicionar</Button>
-        <Button variant="outlined" color="error">
+        <Button size="small" variant="contained">
+          Adicionar
+        </Button>
+        <Button size="small" variant="outlined" color="error">
           Limpar
         </Button>
       </Stack>

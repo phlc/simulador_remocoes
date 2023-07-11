@@ -6,6 +6,7 @@ import EditIcon from '@mui/icons-material/Edit';
 function Person() {
   return (
     <ListItem
+      style={{ minWidth: '300px' }}
       disableGutters
       secondaryAction={[
         <IconButton>

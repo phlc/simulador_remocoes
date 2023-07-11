@@ -6,6 +6,7 @@ console.log(varas[1]);
 function LocationsAutoComplete() {
   return (
     <Autocomplete
+      size="small"
       disablePortal
       onChange={(e, value) => console.log(value)}
       id="combo-box-demo"

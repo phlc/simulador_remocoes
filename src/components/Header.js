@@ -6,7 +6,13 @@ import MyLocationIcon from '@mui/icons-material/MyLocation';
 
 export default function Header() {
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box
+      sx={{
+        display: 'flex',
+        width: '100%',
+        height: 'auto',
+      }}
+    >
       <AppBar position="static">
         <Toolbar>
           <MyLocationIcon fontSize="large" style={{ marginRight: '14px' }} />
