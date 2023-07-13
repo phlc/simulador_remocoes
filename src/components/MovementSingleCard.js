@@ -6,7 +6,7 @@ function MovementSingleCard() {
       <Card elevation={0}>
         <CardContent>
           <Typography sx={{ fontSize: 14 }} color="secundary">
-            Juiz
+            Juiz(a)
           </Typography>
           <Typography variant="body2" color="primary">
             José Malcon dos Santos Dias Trindade

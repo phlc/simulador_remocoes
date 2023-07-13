@@ -2,7 +2,6 @@ import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 import varas from '../data/varas.json';
 
-console.log(varas[1]);
 function LocationsAutoComplete() {
   return (
     <Autocomplete

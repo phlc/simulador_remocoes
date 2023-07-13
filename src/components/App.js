@@ -6,6 +6,7 @@ import Header from './Header';
 import Body from './Body';
 import CssBaseline from '@mui/material/CssBaseline';
 import Footer from './Footer';
+import FormDialog from './FormDialog';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Header />
       <Body />
       <Footer />
+      <FormDialog />
     </>
   );
 }

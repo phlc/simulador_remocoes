@@ -20,7 +20,7 @@ function Options() {
       <Card elevation={0}>
         <CardContent>
           <Typography sx={{ fontSize: 14 }} color="secundary">
-            Juiz
+            Juiz(a)
           </Typography>
           <Typography variant="h7" component="div" color="primary">
             Jose da Silva e Malcon Dias
