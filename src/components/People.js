@@ -1,7 +1,7 @@
 import { Typography, Button, Stack, Divider, List } from '@mui/material';
 import Person from './Person';
 
-function People() {
+function People({ people, onOpenForm }) {
   return (
     <>
       <Typography align={'center'} margin={1} variant={'h6'} color={'primary'}>
@@ -14,7 +14,7 @@ function People() {
           justifyContent="center"
           alignItems="center"
         >
-          <Button size="small" variant="contained">
+          <Button size="small" variant="contained" onClick={onOpenForm}>
             Adicionar
           </Button>
           <Button size="small" variant="outlined" color="error">
@@ -28,18 +28,9 @@ function People() {
             overflowY: 'scroll',
           }}
         >
-          <Person />
-          <Person />
-          <Person />
-          <Person />
-          <Person />
-          <Person />
-          <Person />
-          <Person />
-          <Person />
-          <Person />
-          <Person />
-          <Person />
+          {people.map((person) => (
+            <Person person={person} key={person.id} />
+          ))}
         </List>
       </Typography>
     </>

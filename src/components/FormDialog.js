@@ -17,24 +17,25 @@ import {
 import DialogTitle from '@mui/material/DialogTitle';
 import LocationsAutoComplete from './LocationsAutoComplete';
 
-export default function FormDialog() {
-  const [open, setOpen] = useState(true);
-  const [varaCascata, setVaraCascata] = useState(true);
+export default function FormDialog({ onSetPeople, onCloseForm, openForm }) {
+  const [locationCascade, setlocationCascade] = useState(true);
+  const [name, setName] = useState('');
+  const [id, setId] = useState('');
+  const [location, setLocation] = useState('');
 
-  const handleClickOpen = () => {
-    setOpen(true);
-  };
-
-  const handleClose = () => {
-    setOpen(false);
-  };
+  function handleAdd() {
+    const person = { name, id: Number(id), location, locationCascade };
+    if (onSetPeople(person)) {
+      setName('');
+      setId('');
+      setLocation('');
+      onCloseForm();
+    }
+  }
 
   return (
     <div>
-      <Button variant="outlined" onClick={handleClickOpen}>
-        Open form dialog
-      </Button>
-      <Dialog open={open} onClose={handleClose}>
+      <Dialog open={openForm} onClose={onCloseForm}>
         <DialogTitle>
           <Typography align={'center'} variant={'h6'} color={'primary'}>
             Inscrever Juiz(a)
@@ -59,13 +60,15 @@ export default function FormDialog() {
                 id="name"
                 placeholder="Nome"
                 variant="outlined"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
               />
             </Grid>
             <Grid item xs={6}>
               <Typography sx={{ fontSize: 14 }} color="secundary">
                 Lotação
               </Typography>
-              <LocationsAutoComplete />
+              <LocationsAutoComplete onChange={(loc) => setLocation(loc)} />
             </Grid>
             <Grid item xs={6}>
               <Typography sx={{ fontSize: 14 }} color="secundary">
@@ -75,24 +78,35 @@ export default function FormDialog() {
                 <FormControlLabel
                   control={
                     <Checkbox
-                      checked={varaCascata}
-                      onChange={(e) => setVaraCascata(e.target.checked)}
+                      checked={locationCascade}
+                      onChange={(e) => setlocationCascade(e.target.checked)}
                     />
                   }
-                  label={varaCascata ? 'Sim' : 'Não'}
+                  label={locationCascade ? 'Sim' : 'Não'}
                 />
               </FormGroup>
             </Grid>
-            <Grid item xs={3}>
+            <Grid item xs={3.5}>
               <Typography sx={{ fontSize: 14 }} color="secundary">
                 Antiguidade
               </Typography>
               <TextField
+                inputProps={{ min: 0 }}
+                onKeyDown={(evt) =>
+                  (evt.key === '-' ||
+                    evt.key === 'e' ||
+                    evt.key === '+' ||
+                    evt.key === '.') &&
+                  evt.preventDefault()
+                }
+                type="number"
                 style={{ width: '100%' }}
                 size="small"
                 id="antiguidade"
                 placeholder="Antiguidade"
                 variant="outlined"
+                value={id}
+                onChange={(e) => setId(e.target.value)}
               />
             </Grid>
             <Grid item xs={12}>
@@ -120,10 +134,15 @@ export default function FormDialog() {
           </Grid>
         </DialogContent>
         <DialogActions sx={{ justifyContent: 'center', margin: '4' }}>
-          <Button size="small" variant="contained">
+          <Button size="small" variant="contained" onClick={handleAdd}>
             Adicionar
           </Button>
-          <Button size="small" variant="outlined" color="error">
+          <Button
+            size="small"
+            variant="outlined"
+            color="error"
+            onClick={onCloseForm}
+          >
             Cancelar
           </Button>
         </DialogActions>

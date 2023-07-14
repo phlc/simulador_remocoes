@@ -3,7 +3,7 @@ import People from './People';
 import Options from './Options';
 import Movements from './Movements';
 
-export default function Body() {
+export default function Body({ people, onOpenForm }) {
   return (
     <Box
       sx={{
@@ -15,7 +15,7 @@ export default function Body() {
       }}
     >
       <Paper elevation={2} style={{ width: '100%', margin: 3 }}>
-        <People />
+        <People people={people} onOpenForm={onOpenForm} />
       </Paper>
       <Paper elevation={2} style={{ width: '100%', margin: 3 }}>
         <Options />

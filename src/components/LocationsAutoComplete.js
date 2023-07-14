@@ -2,12 +2,13 @@ import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 import varas from '../data/varas.json';
 
-function LocationsAutoComplete() {
+function LocationsAutoComplete({ onChange, value }) {
   return (
     <Autocomplete
       size="small"
       disablePortal
-      onChange={(e, value) => console.log(value)}
+      onChange={(e, value) => onChange(value)}
+      value={value}
       id="combo-box-demo"
       options={varas}
       getOptionLabel={(option) =>

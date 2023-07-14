@@ -3,27 +3,27 @@ import IconButton from '@mui/material/IconButton';
 import DeleteIcon from '@mui/icons-material/Delete';
 import EditIcon from '@mui/icons-material/Edit';
 
-function Person() {
+function Person({ person }) {
   return (
     <ListItem
       style={{ minWidth: '380px' }}
       disableGutters
       secondaryAction={[
-        <IconButton>
+        <IconButton key={1}>
           <EditIcon />
         </IconButton>,
-        <IconButton>
+        <IconButton key={2}>
           <DeleteIcon />
         </IconButton>,
       ]}
     >
       <ListItemAvatar>
-        <Avatar sx={{ bgcolor: 'primary.main' }}>999</Avatar>
+        <Avatar sx={{ bgcolor: 'primary.main' }}>{person.id}</Avatar>
       </ListItemAvatar>
       <ListItemText
         sx={{ whiteSpace: 'normal', marginRight: 3 }}
-        primary={'Super long string that needs to be wrapped'}
-        secondary={'other text not important'}
+        primary={person.name}
+        secondary={`${person.location.vara} ${person.location.cidade} ${person.location.estado}`}
       />
     </ListItem>
   );
