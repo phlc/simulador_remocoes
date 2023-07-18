@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { useState } from 'react';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import Dialog from '@mui/material/Dialog';
@@ -17,20 +16,54 @@ import {
 import DialogTitle from '@mui/material/DialogTitle';
 import LocationsAutoComplete from './LocationsAutoComplete';
 
-export default function FormDialog({ onSetPeople, onCloseForm, openForm }) {
-  const [locationCascade, setlocationCascade] = useState(true);
-  const [name, setName] = useState('');
-  const [id, setId] = useState('');
-  const [location, setLocation] = useState('');
-
+export default function FormDialog({
+  selectedPerson,
+  onSetSelectedPerson,
+  formData,
+  onSetFormData,
+  onSetPerson,
+  onEditPerson,
+  onCloseForm,
+  openForm,
+}) {
   function handleAdd() {
-    const person = { name, id: Number(id), location, locationCascade };
-    if (onSetPeople(person)) {
-      setName('');
-      setId('');
-      setLocation('');
+    const newPerson = {
+      ...formData,
+      options: [],
+    };
+
+    if (selectedPerson) {
+      if (
+        onEditPerson(selectedPerson, {
+          ...newPerson,
+          options: selectedPerson.options,
+        })
+      ) {
+        onSetFormData({
+          locationCascade: true,
+          name: '',
+          id: '',
+          location: null,
+        });
+        onSetSelectedPerson(null);
+        onCloseForm();
+      }
+    } else if (onSetPerson(newPerson)) {
+      onSetFormData({
+        locationCascade: true,
+        name: '',
+        id: '',
+        location: null,
+      });
+      onSetSelectedPerson(null);
       onCloseForm();
     }
+  }
+
+  function handleCancel() {
+    onSetFormData({ locationCascade: true, name: '', id: '', location: null });
+    onSetSelectedPerson(null);
+    onCloseForm();
   }
 
   return (
@@ -60,15 +93,22 @@ export default function FormDialog({ onSetPeople, onCloseForm, openForm }) {
                 id="name"
                 placeholder="Nome"
                 variant="outlined"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
+                value={formData.name}
+                onChange={(e) =>
+                  onSetFormData({ ...formData, name: e.target.value })
+                }
               />
             </Grid>
             <Grid item xs={6}>
               <Typography sx={{ fontSize: 14 }} color="secundary">
                 Lotação
               </Typography>
-              <LocationsAutoComplete onChange={(loc) => setLocation(loc)} />
+              <LocationsAutoComplete
+                onChange={(loc) =>
+                  onSetFormData({ ...formData, location: loc })
+                }
+                value={formData.location}
+              />
             </Grid>
             <Grid item xs={6}>
               <Typography sx={{ fontSize: 14 }} color="secundary">
@@ -78,11 +118,16 @@ export default function FormDialog({ onSetPeople, onCloseForm, openForm }) {
                 <FormControlLabel
                   control={
                     <Checkbox
-                      checked={locationCascade}
-                      onChange={(e) => setlocationCascade(e.target.checked)}
+                      checked={formData.locationCascade}
+                      onChange={(e) =>
+                        onSetFormData({
+                          ...formData,
+                          locationCascade: e.target.checked,
+                        })
+                      }
                     />
                   }
-                  label={locationCascade ? 'Sim' : 'Não'}
+                  label={formData.locationCascade ? 'Sim' : 'Não'}
                 />
               </FormGroup>
             </Grid>
@@ -105,8 +150,10 @@ export default function FormDialog({ onSetPeople, onCloseForm, openForm }) {
                 id="antiguidade"
                 placeholder="Antiguidade"
                 variant="outlined"
-                value={id}
-                onChange={(e) => setId(e.target.value)}
+                value={formData.id}
+                onChange={(e) =>
+                  onSetFormData({ ...formData, id: e.target.value })
+                }
               />
             </Grid>
             <Grid item xs={12}>
@@ -141,7 +188,7 @@ export default function FormDialog({ onSetPeople, onCloseForm, openForm }) {
             size="small"
             variant="outlined"
             color="error"
-            onClick={onCloseForm}
+            onClick={handleCancel}
           >
             Cancelar
           </Button>

@@ -1,7 +1,15 @@
 import { Typography, Button, Stack, Divider, List } from '@mui/material';
 import Person from './Person';
 
-function People({ people, onOpenForm }) {
+function People({
+  selectedPerson,
+  onSetSelectedPerson,
+  onSetFormData,
+  people,
+  onOpenForm,
+  onDeletePerson,
+  onClearPeople,
+}) {
   return (
     <>
       <Typography align={'center'} margin={1} variant={'h6'} color={'primary'}>
@@ -14,10 +22,37 @@ function People({ people, onOpenForm }) {
           justifyContent="center"
           alignItems="center"
         >
-          <Button size="small" variant="contained" onClick={onOpenForm}>
+          <Button
+            size="small"
+            variant="contained"
+            onClick={() => {
+              onSetFormData({
+                locationCascade: true,
+                name: '',
+                id: '',
+                location: null,
+              });
+              onSetSelectedPerson(null);
+              onOpenForm();
+            }}
+          >
             Adicionar
           </Button>
-          <Button size="small" variant="outlined" color="error">
+          <Button
+            size="small"
+            variant="outlined"
+            color="error"
+            onClick={() => {
+              onSetFormData({
+                locationCascade: true,
+                name: '',
+                id: '',
+                location: null,
+              });
+              onSetSelectedPerson(null);
+              onClearPeople();
+            }}
+          >
             Limpar
           </Button>
         </Stack>
@@ -29,7 +64,15 @@ function People({ people, onOpenForm }) {
           }}
         >
           {people.map((person) => (
-            <Person person={person} key={person.id} />
+            <Person
+              selectedPerson={selectedPerson}
+              onSetSelectedPerson={onSetSelectedPerson}
+              onSetFormData={onSetFormData}
+              person={person}
+              key={person.id}
+              onDeletePerson={onDeletePerson}
+              onOpenForm={onOpenForm}
+            />
           ))}
         </List>
       </Typography>

@@ -1,30 +1,67 @@
-import { ListItem, ListItemText, Avatar, ListItemAvatar } from '@mui/material';
+import {
+  ListItem,
+  ListItemText,
+  Avatar,
+  ListItemAvatar,
+  ListItemButton,
+  Grid,
+} from '@mui/material';
 import IconButton from '@mui/material/IconButton';
 import DeleteIcon from '@mui/icons-material/Delete';
 import EditIcon from '@mui/icons-material/Edit';
 
-function Person({ person }) {
+function Person({
+  selectedPerson,
+  onSetSelectedPerson,
+  onSetFormData,
+  person,
+  onDeletePerson,
+  onOpenForm,
+  setFormCaller,
+}) {
   return (
     <ListItem
       style={{ minWidth: '380px' }}
       disableGutters
-      secondaryAction={[
-        <IconButton key={1}>
-          <EditIcon />
-        </IconButton>,
-        <IconButton key={2}>
-          <DeleteIcon />
-        </IconButton>,
-      ]}
+      disablePadding
+      secondaryAction={
+        <Grid container>
+          <Grid item xs={6}>
+            <IconButton
+              key={1}
+              onClick={() => {
+                onSetFormData({ ...person });
+                onSetSelectedPerson(person);
+                onOpenForm();
+              }}
+            >
+              <EditIcon />
+            </IconButton>
+          </Grid>
+          <Grid item xs={6}>
+            <IconButton key={2} onClick={() => onDeletePerson(person)}>
+              <DeleteIcon />
+            </IconButton>
+          </Grid>
+        </Grid>
+      }
     >
-      <ListItemAvatar>
-        <Avatar sx={{ bgcolor: 'primary.main' }}>{person.id}</Avatar>
-      </ListItemAvatar>
-      <ListItemText
-        sx={{ whiteSpace: 'normal', marginRight: 3 }}
-        primary={person.name}
-        secondary={`${person.location.vara} ${person.location.cidade} ${person.location.estado}`}
-      />
+      <ListItemButton
+        selected={selectedPerson?.id === person.id}
+        onClick={() => {
+          onSetFormData({ ...person });
+          onSetSelectedPerson(person);
+        }}
+      >
+        <ListItemAvatar>
+          <Avatar sx={{ bgcolor: 'primary.main' }}>{person.id}</Avatar>
+        </ListItemAvatar>
+        <ListItemText
+          sx={{ whiteSpace: 'normal', marginRight: 4 }}
+          primary={person.name}
+          secondary={`${person.location.vara} ${person.location.cidade} ${person.location.estado}`}
+        />
+      </ListItemButton>
     </ListItem>
   );
 }

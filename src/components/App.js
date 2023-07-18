@@ -14,17 +14,18 @@ import AlertMessage from './AlertMessage';
 people
 {
   name:
-  id: //priority
-  location:
-  locationCascade:
+  id: int //priority
+  location: string
+  locationCascade: bool
+  options: []
 }
 
 location
 {
-  id:
-  state:
-  city:
-  court:
+  id: integer
+  state: string
+  city: string
+  court: string
 }
 */
 
@@ -38,8 +39,9 @@ export default function App() {
 
   //People State and Functions
   const [people, setPeople] = useState([]);
+  const [selectedPerson, setSelectedPerson] = useState(null);
 
-  function handleAddPeople(person) {
+  function handleAddPerson(person) {
     if (person.name === '') {
       setAlertMessage({
         message: 'Nome é um campo obrigatório.',
@@ -72,7 +74,7 @@ export default function App() {
       });
       return false;
     }
-    setPeople((item) => [...item, person].sort((a, b) => a.id - b.id));
+    setPeople((array) => [...array, person].sort((a, b) => a.id - b.id));
     setAlertMessage({
       message: 'Juiz(a) inscrito com sucesso.',
       severity: 'success',
@@ -81,19 +83,104 @@ export default function App() {
     return true;
   }
 
+  function handleEditPerson(oldPerson, newPerson) {
+    if (newPerson.name === '') {
+      setAlertMessage({
+        message: 'Nome é um campo obrigatório.',
+        severity: 'error',
+        open: true,
+      });
+      return false;
+    }
+    if (newPerson.location === null) {
+      setAlertMessage({
+        message: 'Lotação é um campo obrigatório.',
+        severity: 'error',
+        open: true,
+      });
+      return false;
+    }
+    if (newPerson.id === '') {
+      setAlertMessage({
+        message: 'Antiguidade é um campo obrigatório.',
+        severity: 'error',
+        open: true,
+      });
+      return false;
+    }
+    if (newPerson.id !== oldPerson.id) {
+      if (people.filter((item) => item.id === newPerson.id).length > 0) {
+        setAlertMessage({
+          message: 'Já existe um Juiz(a) cadastradado com essa antiguidade.',
+          severity: 'error',
+          open: true,
+        });
+        return false;
+      }
+    }
+    setPeople((array) =>
+      [...array.filter((item) => item.id !== oldPerson.id), newPerson].sort(
+        (a, b) => a.id - b.id
+      )
+    );
+    setAlertMessage({
+      message: 'Juiz(a) alterado com sucesso.',
+      severity: 'success',
+      open: true,
+    });
+    return true;
+  }
+
+  function handleDeletePerson(person) {
+    setPeople((array) => array.filter((item) => item.id !== person.id));
+    setAlertMessage({
+      message: 'Juiz(a) excluído com sucesso.',
+      severity: 'success',
+      open: true,
+    });
+  }
+
+  function handleClearPeople() {
+    setPeople([]);
+    setAlertMessage({
+      message: 'Lista limpa com sucesso.',
+      severity: 'success',
+      open: true,
+    });
+  }
+
   // FormDialog State
-  const [form, setForm] = useState(false);
+  const [openForm, setOpenForm] = useState(false);
+  const [formData, setFormData] = useState({
+    locationCascade: true,
+    name: '',
+    id: '',
+    location: null,
+  });
 
   return (
     <>
       <CssBaseline />
       <Header />
-      <Body people={people} onOpenForm={() => setForm(true)} />
+      <Body
+        selectedPerson={selectedPerson}
+        onSetSelectedPerson={setSelectedPerson}
+        onSetFormData={setFormData}
+        people={people}
+        onOpenForm={() => setOpenForm(true)}
+        onDeletePerson={handleDeletePerson}
+        onClearPeople={handleClearPeople}
+      />
       <Footer />
       <FormDialog
-        onSetPeople={handleAddPeople}
-        onCloseForm={() => setForm(false)}
-        openForm={form}
+        selectedPerson={selectedPerson}
+        onSetSelectedPerson={setSelectedPerson}
+        formData={formData}
+        onSetFormData={setFormData}
+        onSetPerson={handleAddPerson}
+        onEditPerson={handleEditPerson}
+        onCloseForm={() => setOpenForm(false)}
+        openForm={openForm}
       />
       <AlertMessage
         {...alertMessage}

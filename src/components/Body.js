@@ -3,7 +3,15 @@ import People from './People';
 import Options from './Options';
 import Movements from './Movements';
 
-export default function Body({ people, onOpenForm }) {
+export default function Body({
+  selectedPerson,
+  onSetSelectedPerson,
+  onSetFormData,
+  people,
+  onOpenForm,
+  onDeletePerson,
+  onClearPeople,
+}) {
   return (
     <Box
       sx={{
@@ -15,7 +23,15 @@ export default function Body({ people, onOpenForm }) {
       }}
     >
       <Paper elevation={2} style={{ width: '100%', margin: 3 }}>
-        <People people={people} onOpenForm={onOpenForm} />
+        <People
+          selectedPerson={selectedPerson}
+          onSetSelectedPerson={onSetSelectedPerson}
+          onSetFormData={onSetFormData}
+          people={people}
+          onOpenForm={onOpenForm}
+          onDeletePerson={onDeletePerson}
+          onClearPeople={onClearPeople}
+        />
       </Paper>
       <Paper elevation={2} style={{ width: '100%', margin: 3 }}>
         <Options />
