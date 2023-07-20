@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect } from 'react';
 import {
   List,
   ListItem,
@@ -12,93 +12,31 @@ import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
 import DeleteIcon from '@mui/icons-material/Delete';
 import DragIndicatorIcon from '@mui/icons-material/DragIndicator';
 
-function OptionsList() {
-  const [items, setItems] = useState([
-    {
-      id: 0,
-      estado: '',
-      cidade: '',
-      vara: 'Sem Lotação',
-    },
-    {
-      id: 1,
-      estado: 'Acre',
-      cidade: 'Rio Branco',
-      vara: '1ª Geral',
-    },
-    {
-      id: 2,
-      estado: 'Acre',
-      cidade: 'Rio Branco',
-      vara: '2ª Geral',
-    },
-    {
-      id: 3,
-      estado: 'Acre',
-      cidade: 'Rio Branco',
-      vara: '3ª Geral',
-    },
-    {
-      id: 4,
-      estado: 'Acre',
-      cidade: 'Rio Branco',
-      vara: '4ª Juizado Especial Cível e Criminal',
-    },
-    {
-      id: 5,
-      estado: 'Acre',
-      cidade: 'Rio Branco',
-      vara: '3ª Execução Fiscal (Antiga 25ª Vara)',
-    },
-    {
-      id: 6,
-      estado: 'Acre',
-      cidade: 'Rio Branco',
-      vara: '2ª Relatoria TR',
-    },
-    {
-      id: 7,
-      estado: 'Acre',
-      cidade: 'Rio Branco',
-      vara: '3ª Relatoria TR',
-    },
-    {
-      id: 8,
-      estado: 'Acre',
-      cidade: 'Cruzeiro do Sul',
-      vara: 'Vara Única',
-    },
-    {
-      id: 9,
-      estado: 'Amapá',
-      cidade: 'Macapá',
-      vara: '1ª Cível',
-    },
-    {
-      id: 10,
-      estado: 'Amapá',
-      cidade: 'Macapá',
-      vara: '2ª Cível',
-    },
-    {
-      id: 11,
-      estado: 'Amapá',
-      cidade: 'Macapá',
-      vara: '3ª Juizado Especial Cível',
-    },
-  ]);
+function setItems(
+  updatedList,
+  selectedPerson,
+  onSetSelectedPerson,
+  onEditPerson
+) {
+  const newPerson = { ...selectedPerson, options: updatedList };
+  if (onEditPerson(selectedPerson, newPerson)) {
+    onSetSelectedPerson(newPerson);
+  }
+}
+
+function OptionsList({ selectedPerson, onSetSelectedPerson, onEditPerson }) {
+  if (!selectedPerson) return;
 
   const handleDrop = (droppedItem) => {
     // Ignore drop outside droppable container
     if (!droppedItem.destination) return;
-    var updatedList = [...items];
+    var updatedList = [...selectedPerson.options];
     // Remove dragged item
     const [reorderedItem] = updatedList.splice(droppedItem.source.index, 1);
     // Add dropped item
     updatedList.splice(droppedItem.destination.index, 0, reorderedItem);
     // Update State
-    setItems(() => updatedList);
-    console.log(updatedList);
+    setItems(updatedList, selectedPerson, onSetSelectedPerson, onEditPerson);
   };
 
   return (
@@ -116,7 +54,7 @@ function OptionsList() {
                 overflowY: 'scroll',
               }}
             >
-              {items.map((item, index) => (
+              {selectedPerson.options.map((item, index) => (
                 <Draggable
                   key={item.id}
                   draggableId={`${item.id}`}
@@ -154,10 +92,10 @@ function OptionsList() {
                           <ListItemIcon>
                             <DragIndicatorIcon sx={{ marginRight: 5 }} />
                           </ListItemIcon>
+                          <IconButton sx={{ marginBottom: 1 }}>
+                            <DeleteIcon />
+                          </IconButton>
                         </ListItemSecondaryAction>
-                        <IconButton sx={{ marginBottom: 1 }}>
-                          <DeleteIcon />
-                        </IconButton>
                       </ListItem>
                     </div>
                   )}

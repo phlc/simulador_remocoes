@@ -15,7 +15,7 @@ people
 {
   name:
   id: int //priority
-  location: string
+  location: object
   locationCascade: bool
   options: []
 }
@@ -167,6 +167,7 @@ export default function App() {
         onSetSelectedPerson={setSelectedPerson}
         onSetFormData={setFormData}
         people={people}
+        onEditPerson={handleEditPerson}
         onOpenForm={() => setOpenForm(true)}
         onDeletePerson={handleDeletePerson}
         onClearPeople={handleClearPeople}

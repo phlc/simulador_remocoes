@@ -8,6 +8,7 @@ export default function Body({
   onSetSelectedPerson,
   onSetFormData,
   people,
+  onEditPerson,
   onOpenForm,
   onDeletePerson,
   onClearPeople,
@@ -34,7 +35,12 @@ export default function Body({
         />
       </Paper>
       <Paper elevation={2} style={{ width: '100%', margin: 3 }}>
-        <Options />
+        <Options
+          selectedPerson={selectedPerson}
+          onSetSelectedPerson={onSetSelectedPerson}
+          people={people}
+          onEditPerson={onEditPerson}
+        />
       </Paper>
       <Paper elevation={2} style={{ width: '100%', margin: 3 }}>
         <Movements />
