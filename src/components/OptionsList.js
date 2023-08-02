@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import {
   List,
   ListItem,
@@ -19,6 +18,19 @@ function setItems(
   onEditPerson
 ) {
   const newPerson = { ...selectedPerson, options: updatedList };
+  if (onEditPerson(selectedPerson, newPerson)) {
+    onSetSelectedPerson(newPerson);
+  }
+}
+
+function handleDeleteLocation(
+  id,
+  selectedPerson,
+  onSetSelectedPerson,
+  onEditPerson
+) {
+  const newLocations = selectedPerson.options.filter((loc) => loc.id !== id);
+  const newPerson = { ...selectedPerson, options: newLocations };
   if (onEditPerson(selectedPerson, newPerson)) {
     onSetSelectedPerson(newPerson);
   }
@@ -83,16 +95,26 @@ function OptionsList({ selectedPerson, onSetSelectedPerson, onEditPerson }) {
                           primaryTypographyProps={{
                             whiteSpace: 'normal',
                             fontSize: '14px',
-                            marginRight: 2.5,
+                            marginRight: 4.5,
                           }}
                           primary={`${item.vara} ${item.cidade} ${item.estado}`}
                         />
 
                         <ListItemSecondaryAction>
                           <ListItemIcon>
-                            <DragIndicatorIcon sx={{ marginRight: 5 }} />
+                            <DragIndicatorIcon sx={{ marginRight: 0 }} />
                           </ListItemIcon>
-                          <IconButton sx={{ marginBottom: 1 }}>
+                          <IconButton
+                            sx={{ marginBottom: 2 }}
+                            onClick={() =>
+                              handleDeleteLocation(
+                                item.id,
+                                selectedPerson,
+                                onSetSelectedPerson,
+                                onEditPerson
+                              )
+                            }
+                          >
                             <DeleteIcon />
                           </IconButton>
                         </ListItemSecondaryAction>

@@ -1,17 +1,14 @@
-import { Typography, Button, Stack, Divider, List } from '@mui/material';
-import Person from './Person';
+import { Typography, Button, Stack, Divider, List, Paper } from '@mui/material';
 
 function People({
-  selectedPerson,
   onSetSelectedPerson,
   onSetFormData,
-  people,
   onOpenForm,
-  onDeletePerson,
   onClearPeople,
+  children,
 }) {
   return (
-    <>
+    <Paper elevation={2} style={{ width: '100%', margin: 3 }}>
       <Typography align={'center'} margin={1} variant={'h6'} color={'primary'}>
         Juízes Inscritos
         <Divider />
@@ -63,20 +60,10 @@ function People({
             overflowY: 'scroll',
           }}
         >
-          {people.map((person) => (
-            <Person
-              selectedPerson={selectedPerson}
-              onSetSelectedPerson={onSetSelectedPerson}
-              onSetFormData={onSetFormData}
-              person={person}
-              key={person.id}
-              onDeletePerson={onDeletePerson}
-              onOpenForm={onOpenForm}
-            />
-          ))}
+          {children}
         </List>
       </Typography>
-    </>
+    </Paper>
   );
 }
 

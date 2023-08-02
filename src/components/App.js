@@ -2,13 +2,19 @@ import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
+import CssBaseline from '@mui/material/CssBaseline';
 import Header from './Header';
 import Body from './Body';
-import CssBaseline from '@mui/material/CssBaseline';
 import Footer from './Footer';
 import FormDialog from './FormDialog';
-import { useState } from 'react';
 import AlertMessage from './AlertMessage';
+import People from './People';
+import Person from './Person';
+import Options from './Options';
+import OptionsList from './OptionsList';
+
+import Movements from './Movements';
+import { useState } from 'react';
 
 /*
 people
@@ -162,16 +168,40 @@ export default function App() {
     <>
       <CssBaseline />
       <Header />
-      <Body
-        selectedPerson={selectedPerson}
-        onSetSelectedPerson={setSelectedPerson}
-        onSetFormData={setFormData}
-        people={people}
-        onEditPerson={handleEditPerson}
-        onOpenForm={() => setOpenForm(true)}
-        onDeletePerson={handleDeletePerson}
-        onClearPeople={handleClearPeople}
-      />
+      <Body>
+        <People
+          onSetSelectedPerson={setSelectedPerson}
+          onSetFormData={setFormData}
+          onOpenForm={() => setOpenForm(true)}
+          onClearPeople={handleClearPeople}
+        >
+          {people.map((person) => (
+            <Person
+              selectedPerson={selectedPerson}
+              onSetSelectedPerson={setSelectedPerson}
+              onSetFormData={setFormData}
+              person={person}
+              key={person.id}
+              onDeletePerson={handleDeletePerson}
+              onOpenForm={() => setOpenForm(true)}
+            />
+          ))}
+        </People>
+        <Options
+          selectedPerson={selectedPerson}
+          onSetSelectedPerson={setSelectedPerson}
+          people={people}
+          onEditPerson={handleEditPerson}
+          setAlertMessage={setAlertMessage}
+        >
+          <OptionsList
+            selectedPerson={selectedPerson}
+            onSetSelectedPerson={setSelectedPerson}
+            onEditPerson={handleEditPerson}
+          />
+        </Options>
+        <Movements />
+      </Body>
       <Footer />
       <FormDialog
         selectedPerson={selectedPerson}

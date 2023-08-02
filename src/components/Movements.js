@@ -6,6 +6,7 @@ import {
   Button,
   Stack,
   List,
+  Paper,
 } from '@mui/material';
 
 import LocationsAutoComplete from './LocationsAutoComplete';
@@ -13,7 +14,7 @@ import MovementSingleLocation from './MovementSingleLocation';
 
 export default function Movements() {
   return (
-    <div>
+    <Paper elevation={2} style={{ width: '100%', margin: 3 }}>
       <div>
         <Typography
           align={'center'}
@@ -59,6 +60,6 @@ export default function Movements() {
           <MovementSingleLocation />
         </List>
       </div>
-    </div>
+    </Paper>
   );
 }

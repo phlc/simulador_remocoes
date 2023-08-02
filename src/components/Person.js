@@ -17,7 +17,6 @@ function Person({
   person,
   onDeletePerson,
   onOpenForm,
-  setFormCaller,
 }) {
   return (
     <ListItem

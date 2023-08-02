@@ -6,8 +6,8 @@ import {
   CardContent,
   Button,
   Divider,
+  Paper,
 } from '@mui/material';
-import OptionsList from './OptionsList';
 import LocationsAutoComplete from './LocationsAutoComplete';
 import { useState } from 'react';
 
@@ -15,9 +15,29 @@ function handleAddLocation(
   selectedPerson,
   onSetSelectedPerson,
   onEditPerson,
-  locationForm
+  locationForm,
+  setAlertMessage
 ) {
-  if (!selectedPerson) return;
+  if (!selectedPerson || !locationForm) return;
+  if (
+    selectedPerson.options.filter((loc) => loc.id === locationForm.id).length >
+    0
+  ) {
+    setAlertMessage({
+      message: 'Opção já incluída.',
+      severity: 'error',
+      open: true,
+    });
+    return;
+  }
+  if (locationForm.id === 0) {
+    setAlertMessage({
+      message: 'Lotação "Sem Lotação" não pode ser incluída',
+      severity: 'error',
+      open: true,
+    });
+    return;
+  }
   const newLocations = [...selectedPerson.options, locationForm];
   const newPerson = { ...selectedPerson, options: newLocations };
 
@@ -40,11 +60,17 @@ function handleClearLocation(
   }
 }
 
-function Options({ selectedPerson, onSetSelectedPerson, onEditPerson }) {
+function Options({
+  selectedPerson,
+  onSetSelectedPerson,
+  onEditPerson,
+  setAlertMessage,
+  children,
+}) {
   const [locationForm, setLocationForm] = useState(null);
 
   return (
-    <div>
+    <Paper elevation={2} style={{ width: '100%', margin: 3 }}>
       <Typography align={'center'} margin={1} variant={'h6'} color={'primary'}>
         Opções
       </Typography>
@@ -107,7 +133,8 @@ function Options({ selectedPerson, onSetSelectedPerson, onEditPerson }) {
               selectedPerson,
               onSetSelectedPerson,
               onEditPerson,
-              locationForm
+              locationForm,
+              setAlertMessage
             )
           }
         >
@@ -118,22 +145,20 @@ function Options({ selectedPerson, onSetSelectedPerson, onEditPerson }) {
           variant="outlined"
           color="error"
           disabled={!selectedPerson}
-          onClick={handleClearLocation(
-            selectedPerson,
-            onSetSelectedPerson,
-            onEditPerson
-          )}
+          onClick={() =>
+            handleClearLocation(
+              selectedPerson,
+              onSetSelectedPerson,
+              onEditPerson
+            )
+          }
         >
           Limpar
         </Button>
       </Stack>
       <Divider />
-      <OptionsList
-        selectedPerson={selectedPerson}
-        onSetSelectedPerson={onSetSelectedPerson}
-        onEditPerson={onEditPerson}
-      />
-    </div>
+      {children}
+    </Paper>
   );
 }
 

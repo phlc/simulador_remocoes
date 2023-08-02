@@ -1,18 +1,6 @@
-import { Box, Paper } from '@mui/material';
-import People from './People';
-import Options from './Options';
-import Movements from './Movements';
+import { Box } from '@mui/material';
 
-export default function Body({
-  selectedPerson,
-  onSetSelectedPerson,
-  onSetFormData,
-  people,
-  onEditPerson,
-  onOpenForm,
-  onDeletePerson,
-  onClearPeople,
-}) {
+export default function Body({ children }) {
   return (
     <Box
       sx={{
@@ -23,28 +11,7 @@ export default function Body({
         height: 'auto',
       }}
     >
-      <Paper elevation={2} style={{ width: '100%', margin: 3 }}>
-        <People
-          selectedPerson={selectedPerson}
-          onSetSelectedPerson={onSetSelectedPerson}
-          onSetFormData={onSetFormData}
-          people={people}
-          onOpenForm={onOpenForm}
-          onDeletePerson={onDeletePerson}
-          onClearPeople={onClearPeople}
-        />
-      </Paper>
-      <Paper elevation={2} style={{ width: '100%', margin: 3 }}>
-        <Options
-          selectedPerson={selectedPerson}
-          onSetSelectedPerson={onSetSelectedPerson}
-          people={people}
-          onEditPerson={onEditPerson}
-        />
-      </Paper>
-      <Paper elevation={2} style={{ width: '100%', margin: 3 }}>
-        <Movements />
-      </Paper>
+      {children}
     </Box>
   );
 }
