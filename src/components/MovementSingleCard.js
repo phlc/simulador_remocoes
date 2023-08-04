@@ -1,6 +1,6 @@
 import { Card, CardContent, Typography, Grid } from '@mui/material';
 
-function MovementSingleCard() {
+function MovementSingleCard({ person, from, to }) {
   return (
     <>
       <Card elevation={0}>
@@ -9,23 +9,24 @@ function MovementSingleCard() {
             Juiz(a)
           </Typography>
           <Typography variant="body2" color="primary">
-            José Malcon dos Santos Dias Trindade
+            {person}
           </Typography>
           <Grid container>
-            <Grid item xs={6}>
+            <Grid item xs={5.5}>
               <Typography sx={{ fontSize: 14 }} color="secundary">
                 Origem
               </Typography>
               <Typography variant="body2" color="primary">
-                Vara Única São Sebastião do Paraíso MG
+                {from}
               </Typography>
             </Grid>
-            <Grid item xs={6}>
+            <Grid item xs={1} />
+            <Grid item xs={5.5}>
               <Typography sx={{ fontSize: 14 }} color="secundary">
                 Destino
               </Typography>
               <Typography variant="body2" color="primary">
-                Vara Única São Sebastião do Paraíso MG
+                {to}
               </Typography>
             </Grid>
           </Grid>

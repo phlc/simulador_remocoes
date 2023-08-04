@@ -103,7 +103,15 @@ export default function FormDialog({
               Lotação
             </Typography>
             <LocationsAutoComplete
-              onChange={(loc) => onSetFormData({ ...formData, location: loc })}
+              onChange={(loc) =>
+                loc.id === 0
+                  ? onSetFormData({
+                      ...formData,
+                      location: loc,
+                      locationCascade: false,
+                    })
+                  : onSetFormData({ ...formData, location: loc })
+              }
               value={formData.location}
             />
           </Grid>
@@ -115,11 +123,7 @@ export default function FormDialog({
               <FormControlLabel
                 control={
                   <Checkbox
-                    checked={
-                      formData?.location?.id === 0
-                        ? false
-                        : formData.locationCascade
-                    }
+                    checked={formData.locationCascade}
                     disabled={formData?.location?.id === 0}
                     onChange={(e) =>
                       onSetFormData({

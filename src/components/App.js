@@ -12,19 +12,23 @@ import People from './People';
 import Person from './Person';
 import Options from './Options';
 import OptionsList from './OptionsList';
+import MovementSingleLocation from './MovementSingleLocation';
+import MovementSingleCard from './MovementSingleCard';
+
 import useLocalStorage from './useLocalStorage';
+import simulateLogic from '../functions/simulateLogic';
 
 import Movements from './Movements';
 import { useState } from 'react';
 
 /*
-people
+person
 {
-  name:
+  name: string
   id: int //priority
-  location: object
+  location: location object
   locationCascade: bool
-  options: []
+  options: [location object]
 }
 
 location
@@ -34,17 +38,99 @@ location
   city: string
   court: string
 }
+
+simulatedMovement
+{
+  locationId: integer
+  personId: integer
+  name: string
+  from: location object
+  to: location object
+
+}
 */
 
 export default function App() {
-  //Alert Message State
+  /*
+   ******** Auto Remove State ********
+   */
+  const [autoRemove, setAutoRemove] = useState(false);
+
+  /*
+   ******** Movements State ********
+   */
+
+  const [offeredLocations, setOfferedLocations] = useLocalStorage(
+    'keySimuladorOfferedLocations',
+    []
+  );
+
+  const [simulatedMovements, setSimulatedMovements] = useLocalStorage(
+    'keySimuladorSimlatedMovements',
+    []
+  );
+
+  function simulate() {
+    simulateLogic(
+      people,
+      offeredLocations,
+      simulatedMovements,
+      setSimulatedMovements
+    );
+  }
+
+  function handleAddLocation(locationForm, setLocationForm) {
+    if (!locationForm) return;
+    if (
+      offeredLocations.reduce(
+        (acc, cur) => cur.id === locationForm.id || acc,
+        false
+      )
+    ) {
+      setAlertMessage({
+        message: 'Opção já incluída.',
+        severity: 'error',
+        open: true,
+      });
+      setLocationForm(null);
+      return;
+    }
+
+    if (locationForm.id === 0) {
+      setAlertMessage({
+        message: 'Lotação "Sem Lotação" não pode ser incluída',
+        severity: 'error',
+        open: true,
+      });
+      setLocationForm(null);
+      return;
+    }
+    setOfferedLocations((cur) => [...cur, locationForm]);
+    setLocationForm(null);
+  }
+
+  function handleClearLocations(setLocationForm) {
+    setOfferedLocations([]);
+    setLocationForm(null);
+  }
+
+  function handleDeleteLocation(id) {
+    setOfferedLocations((cur) => cur.filter((item) => item.id !== id));
+  }
+
+  /*
+   ******** Alert Message State ********
+   */
   const [alertMessage, setAlertMessage] = useState({
     message: 'Test',
     severity: 'error',
     open: false,
   });
 
-  //People State and Functions
+  /*
+   ******** People State and Functions ********
+   */
+
   const [people, setPeople] = useLocalStorage('keySimuladorPeople', []);
   const [selectedPerson, setSelectedPerson] = useState(null);
 
@@ -156,7 +242,10 @@ export default function App() {
     });
   }
 
-  // FormDialog State
+  /*
+   ******** FormDialog State ********
+   */
+
   const [openForm, setOpenForm] = useState(false);
   const [formData, setFormData] = useState({
     locationCascade: true,
@@ -165,10 +254,18 @@ export default function App() {
     location: null,
   });
 
+  /*
+   ******** App ********
+   */
+
   return (
     <>
       <CssBaseline />
-      <Header />
+      <Header
+        autoRemove={autoRemove}
+        setAutoRemove={setAutoRemove}
+        onMove={simulate}
+      />
       <Body>
         <People
           onSetSelectedPerson={setSelectedPerson}
@@ -201,7 +298,29 @@ export default function App() {
             onEditPerson={handleEditPerson}
           />
         </Options>
-        <Movements setAlertMessage={setAlertMessage} />
+        <Movements
+          setAlertMessage={setAlertMessage}
+          onAddLocation={handleAddLocation}
+          onClearLocations={handleClearLocations}
+        >
+          {offeredLocations.map((loc) => (
+            <MovementSingleLocation
+              offeredLocation={loc}
+              key={loc.id}
+              onDeleteLocation={handleDeleteLocation}
+            >
+              <MovementSingleCard
+                person={'José Malcon da Silva Costa Alberto'}
+                from={
+                  'Vara Unica de Sao Joao da Lapa Antiga 3 Vara de Piratininga'
+                }
+                to={
+                  'Vara Unica de Sao Joao da Lapa Antiga 3 Vara de Piratininga'
+                }
+              />
+            </MovementSingleLocation>
+          ))}
+        </Movements>
       </Body>
       <Footer />
       <FormDialog

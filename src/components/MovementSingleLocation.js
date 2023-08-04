@@ -10,12 +10,10 @@ import {
 
 import DeleteIcon from '@mui/icons-material/Delete';
 
-import MovementSingleCard from './MovementSingleCard';
-
 function MovementSingleLocation({
   offeredLocation,
-  onSetOfferedLocations,
   onDeleteLocation,
+  children,
 }) {
   return (
     <ListItem>
@@ -33,8 +31,7 @@ function MovementSingleLocation({
               </IconButton>
             </Grid>
           </Grid>
-          <MovementSingleCard />
-          <MovementSingleCard />
+          {children}
           <Divider />
         </CardContent>
       </Card>
