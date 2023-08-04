@@ -9,14 +9,15 @@ import {
   Paper,
 } from '@mui/material';
 import LocationsAutoComplete from './LocationsAutoComplete';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 function handleAddLocation(
   selectedPerson,
   onSetSelectedPerson,
   onEditPerson,
   locationForm,
-  setAlertMessage
+  setAlertMessage,
+  setLocationForm
 ) {
   if (!selectedPerson || !locationForm) return;
   if (
@@ -28,6 +29,8 @@ function handleAddLocation(
       severity: 'error',
       open: true,
     });
+    setLocationForm(null);
+
     return;
   }
   if (locationForm.id === 0) {
@@ -36,6 +39,8 @@ function handleAddLocation(
       severity: 'error',
       open: true,
     });
+    setLocationForm(null);
+
     return;
   }
   const newLocations = [...selectedPerson.options, locationForm];
@@ -43,13 +48,15 @@ function handleAddLocation(
 
   if (onEditPerson(selectedPerson, newPerson)) {
     onSetSelectedPerson(newPerson);
+    setLocationForm(null);
   }
 }
 
 function handleClearLocation(
   selectedPerson,
   onSetSelectedPerson,
-  onEditPerson
+  onEditPerson,
+  setLocationForm
 ) {
   if (!selectedPerson) return;
   const newLocations = [];
@@ -57,6 +64,7 @@ function handleClearLocation(
 
   if (onEditPerson(selectedPerson, newPerson)) {
     onSetSelectedPerson(newPerson);
+    setLocationForm(null);
   }
 }
 
@@ -68,6 +76,8 @@ function Options({
   children,
 }) {
   const [locationForm, setLocationForm] = useState(null);
+
+  useEffect(() => setLocationForm(null), [selectedPerson]);
 
   return (
     <Paper elevation={2} style={{ width: '100%', margin: 3 }}>
@@ -123,6 +133,7 @@ function Options({
         <LocationsAutoComplete
           onChange={(loc) => setLocationForm(loc)}
           value={locationForm}
+          disabled={!selectedPerson}
         />
         <Button
           size="small"
@@ -134,7 +145,8 @@ function Options({
               onSetSelectedPerson,
               onEditPerson,
               locationForm,
-              setAlertMessage
+              setAlertMessage,
+              setLocationForm
             )
           }
         >
@@ -149,7 +161,8 @@ function Options({
             handleClearLocation(
               selectedPerson,
               onSetSelectedPerson,
-              onEditPerson
+              onEditPerson,
+              setLocationForm
             )
           }
         >

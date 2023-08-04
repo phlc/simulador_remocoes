@@ -95,7 +95,7 @@ function OptionsList({ selectedPerson, onSetSelectedPerson, onEditPerson }) {
                           primaryTypographyProps={{
                             whiteSpace: 'normal',
                             fontSize: '14px',
-                            marginRight: 4.5,
+                            marginRight: 8,
                           }}
                           primary={`${item.vara} ${item.cidade} ${item.estado}`}
                         />

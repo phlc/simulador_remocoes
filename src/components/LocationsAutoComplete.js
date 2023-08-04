@@ -2,9 +2,10 @@ import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 import varas from '../data/varas.json';
 
-function LocationsAutoComplete({ onChange, value }) {
+function LocationsAutoComplete({ onChange, value, disabled }) {
   return (
     <Autocomplete
+      disabled={disabled}
       size="small"
       disablePortal
       onChange={(e, value) => onChange(value)}

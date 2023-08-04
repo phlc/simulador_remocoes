@@ -12,6 +12,7 @@ import People from './People';
 import Person from './Person';
 import Options from './Options';
 import OptionsList from './OptionsList';
+import useLocalStorage from './useLocalStorage';
 
 import Movements from './Movements';
 import { useState } from 'react';
@@ -44,7 +45,7 @@ export default function App() {
   });
 
   //People State and Functions
-  const [people, setPeople] = useState([]);
+  const [people, setPeople] = useLocalStorage('keySimuladorPeople', []);
   const [selectedPerson, setSelectedPerson] = useState(null);
 
   function handleAddPerson(person) {
@@ -200,7 +201,7 @@ export default function App() {
             onEditPerson={handleEditPerson}
           />
         </Options>
-        <Movements />
+        <Movements setAlertMessage={setAlertMessage} />
       </Body>
       <Footer />
       <FormDialog
