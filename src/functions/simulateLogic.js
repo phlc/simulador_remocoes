@@ -1,13 +1,13 @@
 export default function simulateLogic(
   people,
   offeredLocations,
-  simulatedMovements,
   setSimulatedMovements
 ) {
   const possibleLocations = new Set();
   let candidates = [];
-  let newSimulatedMovements = [];
+  let outOfOrderMovements = [];
   let everyoneHasLocation = false;
+  const newSimulatedMovements = [];
   for (let i = 0; i < people.length; i++) {
     candidates.push({ ...people.at(i), hasLocation: false });
   }
@@ -20,9 +20,6 @@ export default function simulateLogic(
     }
     offeredLocations.forEach((location) => possibleLocations.add(location.id));
 
-    console.log('candidates', candidates);
-    console.log('locations', possibleLocations);
-
     for (let i = 0; i < candidates.length; i++) {
       let y = 0;
       while (
@@ -32,8 +29,7 @@ export default function simulateLogic(
         if (possibleLocations.has(candidates.at(i).options[y].id)) {
           candidates.at(i).hasLocation = true;
           possibleLocations.delete(candidates.at(i).options[y].id);
-          newSimulatedMovements.push({
-            locationId: candidates.at(i).options[y].id,
+          outOfOrderMovements.push({
             personId: candidates.at(i).id,
             name: candidates.at(i).name,
             from: candidates.at(i).location,
@@ -54,12 +50,55 @@ export default function simulateLogic(
               newCandidates.push({ ...candidate, hasLocation: false });
           }
           candidates = newCandidates;
-          newSimulatedMovements = [];
+          outOfOrderMovements = [];
           console.log(`removal`, candidates);
           break;
         }
       }
     }
   }
-  console.log(newSimulatedMovements);
+
+  for (let i = 0; i < offeredLocations.length; i++) {
+    let found = true;
+    let toLocationId = offeredLocations.at(i).id;
+    const locationThread = { initialLocationId: toLocationId, movements: [] };
+    while (found) {
+      let indexToRemove = -1;
+      for (let y = 0; y < outOfOrderMovements.length; y++) {
+        if (outOfOrderMovements.at(y).to.id === toLocationId) indexToRemove = y;
+      }
+      if (indexToRemove !== -1) {
+        const [locationToAdd] = outOfOrderMovements.splice(indexToRemove, 1);
+        toLocationId = locationToAdd.from.id;
+        locationThread.movements.push(locationToAdd);
+      } else {
+        found = false;
+      }
+    }
+    newSimulatedMovements.push(locationThread);
+  }
+  while (outOfOrderMovements.length > 0) {
+    let found = true;
+    let toLocationId = outOfOrderMovements.at(0).from.id;
+    const locationThread = {
+      initialLocationId: toLocationId + 10000,
+      movements: [],
+    };
+    while (found) {
+      let indexToRemove = -1;
+      for (let y = 0; y < outOfOrderMovements.length; y++) {
+        if (outOfOrderMovements.at(y).to.id === toLocationId) indexToRemove = y;
+      }
+      if (indexToRemove !== -1) {
+        const [locationToAdd] = outOfOrderMovements.splice(indexToRemove, 1);
+        toLocationId = locationToAdd.from.id;
+        locationThread.movements.push(locationToAdd);
+      } else {
+        found = false;
+      }
+    }
+    newSimulatedMovements.push(locationThread);
+  }
+
+  setSimulatedMovements(newSimulatedMovements);
 }

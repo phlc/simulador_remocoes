@@ -6,16 +6,16 @@ import {
   ListItem,
 } from '@mui/material';
 
-function SugestedPermutationSingle({ sugestedPermutation, children }) {
+function SugestedPermutationSingle({ numPermutation, children }) {
   return (
     <ListItem>
       <Card elevation={0}>
         <CardContent>
           <Typography variant="h8" component="div" color="primary">
-            {`Permuta Sugerida ${sugestedPermutation.id}`}
+            {`Permuta Sugerida ${numPermutation}`}
           </Typography>
           {children}
-          <Divider />
+          <Divider sx={{ minWidth: '350px' }} />
         </CardContent>
       </Card>
     </ListItem>

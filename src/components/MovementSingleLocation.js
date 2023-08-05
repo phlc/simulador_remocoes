@@ -32,7 +32,7 @@ function MovementSingleLocation({
             </Grid>
           </Grid>
           {children}
-          <Divider />
+          <Divider sx={{ minWidth: '350px' }} />
         </CardContent>
       </Card>
     </ListItem>

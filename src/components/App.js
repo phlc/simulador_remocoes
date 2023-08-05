@@ -20,6 +20,7 @@ import simulateLogic from '../functions/simulateLogic';
 
 import Movements from './Movements';
 import { useState } from 'react';
+import SugestedPermutationSingle from './SugestedPermutationSingle';
 
 /*
 person
@@ -40,14 +41,15 @@ location
 }
 
 simulatedMovement
-{
-  locationId: integer
-  personId: integer
-  name: string
-  from: location object
-  to: location object
-
-}
+[{
+  initialLocationId: integer
+  movements: [{ 
+    personId: integer
+    name: string
+    from: location object
+    to: location object
+  }]
+}]
 */
 
 export default function App() {
@@ -71,12 +73,7 @@ export default function App() {
   );
 
   function simulate() {
-    simulateLogic(
-      people,
-      offeredLocations,
-      simulatedMovements,
-      setSimulatedMovements
-    );
+    simulateLogic(people, offeredLocations, setSimulatedMovements);
   }
 
   function handleAddLocation(locationForm, setLocationForm) {
@@ -162,6 +159,17 @@ export default function App() {
     if (people.filter((item) => item.id === person.id).length > 0) {
       setAlertMessage({
         message: 'Já existe um Juiz(a) cadastradado com essa antiguidade.',
+        severity: 'error',
+        open: true,
+      });
+      return false;
+    }
+    if (
+      people.filter((item) => item.location.id === person.location.id).length >
+      0
+    ) {
+      setAlertMessage({
+        message: 'Já existe um Juiz(a) cadastradado com nessa lotação.',
         severity: 'error',
         open: true,
       });
@@ -309,17 +317,31 @@ export default function App() {
               key={loc.id}
               onDeleteLocation={handleDeleteLocation}
             >
-              <MovementSingleCard
-                person={'José Malcon da Silva Costa Alberto'}
-                from={
-                  'Vara Unica de Sao Joao da Lapa Antiga 3 Vara de Piratininga'
-                }
-                to={
-                  'Vara Unica de Sao Joao da Lapa Antiga 3 Vara de Piratininga'
-                }
-              />
+              {simulatedMovements
+                .filter((cur) => cur.initialLocationId === loc.id)
+                ?.at(0)
+                ?.movements.map((item) => (
+                  <MovementSingleCard
+                    person={item.name}
+                    from={`${item.from.vara} ${item.from.cidade} ${item.from.estado}`}
+                    to={`${item.to.vara} ${item.to.cidade} ${item.to.estado}`}
+                  />
+                ))}
             </MovementSingleLocation>
           ))}
+          {simulatedMovements
+            .filter((cur) => cur.initialLocationId > 1000)
+            .map((permutation, index) => (
+              <SugestedPermutationSingle numPermutation={index + 1}>
+                {permutation?.movements.map((item) => (
+                  <MovementSingleCard
+                    person={item.name}
+                    from={`${item.from.vara} ${item.from.cidade} ${item.from.estado}`}
+                    to={`${item.to.vara} ${item.to.cidade} ${item.to.estado}`}
+                  />
+                ))}
+              </SugestedPermutationSingle>
+            ))}
         </Movements>
       </Body>
       <Footer />
