@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/simulador_remocoes/static/css/main.86673dca.css",
-    "main.js": "/simulador_remocoes/static/js/main.e78100e6.js",
+    "main.js": "/simulador_remocoes/static/js/main.a2caafe1.js",
     "static/media/roboto-latin-500-normal.woff2": "/simulador_remocoes/static/media/roboto-latin-500-normal.f25d774ecfe0996f8eb5.woff2",
     "static/media/roboto-latin-700-normal.woff2": "/simulador_remocoes/static/media/roboto-latin-700-normal.227c93190fe7f82de3f8.woff2",
     "static/media/roboto-latin-400-normal.woff2": "/simulador_remocoes/static/media/roboto-latin-400-normal.b009a76ad6afe4ebd301.woff2",
@@ -60,10 +60,10 @@
     "static/media/roboto-greek-ext-700-normal.woff": "/simulador_remocoes/static/media/roboto-greek-ext-700-normal.249853776d22a271b2b5.woff",
     "index.html": "/simulador_remocoes/index.html",
     "main.86673dca.css.map": "/simulador_remocoes/static/css/main.86673dca.css.map",
-    "main.e78100e6.js.map": "/simulador_remocoes/static/js/main.e78100e6.js.map"
+    "main.a2caafe1.js.map": "/simulador_remocoes/static/js/main.a2caafe1.js.map"
   },
   "entrypoints": [
     "static/css/main.86673dca.css",
-    "static/js/main.e78100e6.js"
+    "static/js/main.a2caafe1.js"
   ]
 }
