@@ -29,7 +29,7 @@ export default function Footer() {
         />
         <BottomNavigationAction
           onClick={() => {
-            const info = window.open('', '', 'name=manual');
+            const info = window.open('', '', 'name=Informações');
             info.document.body.insertAdjacentHTML('beforeend', html);
           }}
           label="Info"
